@@ -1,0 +1,98 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+
+\begin{document}
+\section{Fragen zum Versuch}
+1. Was sind die wichtigsten Eigenschaften von Laserlicht und wie entsteht Laserlicht? \\
+Laser ist eine Abkürzung für \textbf Light \textbf Amplification by \textbf Stimulated \textbf Emission of \textbf Radiation.\\
+Licht eines Lasers ist Kohärent, insbesondere monochromatisch(zeitliche Kohärenz) und parallel(räumliche Kohärenz).\\
+Laserlicht ist linear polarisiert.\\
+Laserlicht besitzt eine extrem geringe Divergenz.\\
+Die von einem Laser ausgesandten Wellenzüge sind untereinander phasensynchron.\\
+Laserlicht ist sehr gut zu bündeln, daher können hohe Leistungsdichten im Fokus erreicht werden.\\
+Ein Laser besteht aus zwei Spiegeln, den Resonator, von denen ein Spiegel halbdurchlässig ist, einen aktiven Lasermedium, welches je nach Bauart aus einer Gasmischung(CO2 Laser), aus einem Kristallkörper(YAG Laser) oder Glasfasern(Faser Laser) besteht und einer externen Pumpquelle.\\
+Dem Lasermedium wird durch die Pumpquelle Energie zugeführt, wobei das Medium hierdurch angeregt wird und Photonen emittiert. Im Resonator wird die Strahlung des aktiven Lasermediums verstärkt. Gleichzeitig kann nur eine bestimmte Strahlung den Resonator durch den halbdurchlässigen Spiegel verlassen. Diese gebündelte Strahlung ist die Laserstrahlung.\\
+\\2. . Muss man den Spiegelabstand vergrössern oder verkleinern, damit sich die Interferenzringe
+zusammenziehen?\\
+Aus der Kreissymmetrie und der Formel für die Transmission
+\[
+T(\alpha)=\frac{T_{max}}{1+F\sin^{2}(2 \pi\frac{d}{\lambda}\cos\alpha)}
+\]
+folgt für zunehmendem Spiegelabstand $d$, ein Zusammenrücken der Ringe.\\
+\\
+3. Wie kann man bei bekannter Wellenlänge des verwendeten Lichtes den Verschiebeweg der Spiegel gegeneinander ermitteln? Wie groß ist $\Delta d$, wenn man bei einer Wellenlänge von $\lambda = 500nm$ $200$ periodische Intensitätswechsel beobachtet hat?\\
+Aus der Winkelabhängigkeit der Transmission $T(\alpha)$ sieht man, dass Transmissionsmaxima für solche
+Winkel $\alpha$ entstehen, für die $2d\lambda\cos\alpha$ ganzzahlig ist. Für den $k$-ten Ring (von innen gezählt) gilt
+\[
+\frac{2d}{\lambda}\cos {\alpha}_k=(k_0-k)\qquad k,k_0\in \mathbb{N}
+\]
+Es folgt für $k,l\in \mathbb{N}$ und für feste $d$, $k_0$ und $\lambda$
+\begin{align*}
+(k_0-k)\cos {\alpha}_k &= (k_0-l)\cos {\alpha}_l \\
+\Leftrightarrow\qquad k_0(1-\frac{{ \cos\alpha}_l}{{\cos\alpha}_k}) &= k-l\frac{{\cos\alpha}_l}{{\cos\alpha}_k} \\
+\Leftrightarrow\qquad k_0 &=\frac{k-l\frac{{\cos\alpha}_l}{{\cos\alpha}_k}}{1-\frac{{ \cos\alpha}_l}{{\cos\alpha}_k}}
+\end{align*}
+Es ergibt sich hiermit
+\begin{align*}
+d &=\frac{\lambda}{2}\frac{k_0-k}{\cos {\alpha}_k}\\
+&=\frac{\lambda}{2}\frac{k-l\frac{{\cos\alpha}_l}{{\cos\alpha}_k}-k(1-\frac{{\cos\alpha}_l}{{\cos\alpha}_k})}{(1-\frac{{\cos\alpha}_l}{{\cos\alpha}_k})\cos{\alpha}_k}\\
+&=\frac{\lambda}{2}\frac{{\cos\alpha}_l}{{\cos\alpha}_k}\frac{k-l}{\cos{\alpha}_k-\cos{\alpha}_l}
+\end{align*}
+Aus der Resonanzgleichung \[ n\pi = \frac{2\pi}{{\lambda}_n}d \] folgt
+\begin{align*}
+\Delta d &= \frac{n {\lambda}_1}{2}
+\\ &=\frac{200*500nm}{2}
+\\ &=0,0500mm
+\end{align*}
+\\
+\\4. Wie kann man bei bekannter Spiegelverschiebung $d$ eine unbekannte Lichtwellenlänge bestimmen?\\
+Wie in Aufgabe 3 erläutert mit
+\[
+{\lambda}_1=2\frac{\Delta d}{n}
+\] \\
+\\5. Berechnen Sie die Ordnung $k_0$ der zentralen Interferenz ($\alpha=0^\circ$) für $d=3mm$ und $\lambda =600nm$.
+\\Aus der Formel für $T(\alpha=0^\circ)$ folgt, dass für Maxima der Phasenunterschied zwischen zwei benachbarten Teilwellen gleich $\delta=2\pi \frac{2d}{\lambda}$ beträgt, wobei der Spiegelabstand ein ganzzahliges Vielfaches der Wellenlänge sein muss. Hiermit ergibt sich
+\begin{align*}
+k_0 &= \frac{2d}{\lambda}
+\\ &= \frac{2*3mm}{600nm}
+\\ &= 1*10^4
+\end{align*}\\
+\\6. Schätzen Sie den Winkel ab, unter dem dann der erste Inteferenzring ${\alpha}_1$ erscheint.
+\\Für Intensitätsmaximums gilt
+\begin{align*}
+2\pi \frac{d}{\lambda}\cos\alpha=n\pi \qquad n\in \mathbb{N}
+\end{align*}
+\\Hiermit ergibt sich
+\begin{align*}
+{\alpha}_1 &=\arccos \frac{\lambda}{2d}
+\\ &=\arccos \frac{600nm}{2*3mm}
+\\ &=1,57
+\end{align*}\\
+\\
+7. Berechnen Sie das Auflösungsvermögen $\frac{\lambda}{\Delta\lambda}=\frac{\tilde{\nu}}{\Delta\tilde{\nu}}$.\\
+Die Transmission fällt auf den halben Maximalwert ab wenn gilt
+\[
+F\sin^2\frac{{\delta}_H}{2}=1
+\]
+Daraus lässt sich die volle Halbwertsbreite $FWHM$ der Maxima berechnen:
+\[
+FWHM=2{\delta}_H=4\arcsin\frac{1}{\sqrt{F}}\approx \frac{4}{\sqrt{F}}
+\]
+
+
+
+
+\newpage
+Quellen:\\
+https://www.leifiphysik.de/atomphysik/laser/grundwissen/eigenschaften-der-laserstrahlung\\
+https://www.troteclaser.com/de/know-how/faqs/wie-funktioniert-ein-laser/\\
+http://dodo.fb06.fh-muenchen.de/maier/PraktikumPh4/Anleitungen/FPI_WS0910.pdf
+
+
+\end{document}

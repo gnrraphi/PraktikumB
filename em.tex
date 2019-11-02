@@ -1,0 +1,200 @@
+\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+
+\title{Praktikum B Vorbereitung zu Versuch "em"}
+\author{Leon Machtl und Raphael Lehner}
+\date{31.10.2019}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{Einleitung zum Versuch}
+	
+	Die Ladung des Elektrons kann sowohl durch elektrostatische als auch durch elektromagnetische Kraftwirkungen gekennzeichnet werden. Da die schwere und die träge Masse äquivalent sind, kann man die spezifische Ladung des Elektrons theoretisch sowohl durch die Gravitationskraft, als auch durch Trägheitskräfte bestimmen. Da die Wirkung der Gravitation auf ein Elektron aufgrund dessen geringer Masse von ungefähr $9,1\cdot10^{-31}$ kg jedoch für direkte Messungen zu gering ist, wird in folgendem Versuch die spezifische Elektronenmasse durch die Trägheitswirkung experimentell bestimmt. Dazu wird das Elektron durch ein angelegtes homogenes Magnetfeld auf eine Kreisbahn gebracht, wodurch es eine Beschleunigung erfährt. Diese Änderung des Bewegungszustands wird quantitativ erfasst. Dies wird in zwei verschiedenen Versuchsaufbauten durchgeführt: Zunächst in einer Thomson-Röhre und anschließend in einer Doppelstrahlröhre. Bei beiden Teilversuchen wird das homogene Magnetfeld mit Hilfe einer Helmholtzspule erzeugt. Die Änderung wird durch zwei verschiedene Werte beeinflusst. Zum einen durch die Geschwindigkeit der Elektronen, zum anderen durch die gesuchte spezifische Ladung e/m. man benötigt also zwei bekannte Werte, um beide Unbekannten zu finden. In diesem Fall handelt es sich bei diesen beiden bekannten Werten um zwei Felder. Zunächst werden die Elektronen mit einem elektrischem Feld geradlinig beschleunigt bis sie in das durch die Helmholtzspulen erzeugt Magnetfeld eintreten und durch dieses auf eine Kreisbahn abgelenkt wird.\\
+	\\
+	Die Formel 
+	\begin{align}
+	\frac{e}{m}=\frac{2U}{\mu_{0}^2H^2r^2}=\frac{2U}{r^2B^2}
+	\end{align}
+	stellt einen Zusammenhang zwischen dem Feld, das der geradlinigen Beschleunigung dient, U, und dem Magnetfeld B für eine Elektronnbewegung, die senkrecht zur Richtung von B verläuft, dar. Bestimmt man nun experimentell den Radius r der Kreisbahn, so lässt sich e/m berechnen.
+	
+	\newpage
+	
+	\section{Aufgaben zur Vorbereitung}
+	
+	Im Experiment werden Elektronen in einem durch die Spannung U erzeugten elektrischen Feld geradlinig beschleunigt und dann in einem zur Strahlrichtung senkrechten Magnetfeld der Feldstärke H abgelenkt.\\
+	r: Radius der Kreisbahn der Elektronen\\
+	I: Strom durch Magnetfeldspule\\
+	U: Beschleunigungsspannung\\
+	
+	\subsection{Aufgabe 1}
+	
+	Herleitung der Gleichung (1) über den Zusammenhang zwischen Lorentz- und Zentripetalkraft:
+	
+	\begin{equation*}
+	\begin{aligned}
+	|\vec{F_{L}}|&=evB\\
+	|\vec{F_{Z}}|&=\frac{1}{r}mv^2
+	\end{aligned}
+	\end{equation*}
+	
+    Da sich das Elektron auf einer Kreisbahn bewegt, gleichen sich die Zentripetal- und die Lorentzkraft betragsmäßig und ihre Richtungen sind entgegengesetzt. Somit gilt:
+   
+	\begin{equation*}
+	\begin{aligned}
+    |\vec{F_{L}}|&=|\vec{F_{Z}}|\\
+	evB&=\frac{1}{r}mv^2
+	\end{aligned}
+	\end{equation*}
+	\begin{equation}
+	\frac{e}{m}=\frac{v}{rB}
+	\end{equation}
+	
+	Nun schreibt man die Geschwindigkeit $v$ um:
+	
+	\begin{equation*}
+	\begin{aligned}
+	E_{El}&=E_{KIN}\\	
+	eU&=\frac{1}{2}mv^2\\
+	\end{aligned}
+	\end{equation*}
+	\begin{equation}
+	v=\sqrt{\frac{2eU}{m}}
+	\end{equation}
+	
+	Durch einsetzen von (3) in (2) erhält man nun:
+	
+	\begin{equation}
+	\frac{e}{m}=\frac{\sqrt{\frac{2eU}{m}}}{rB}=\frac{2U}{r^2B^2}
+	\end{equation}
+	
+	Was der Gleichung 1 entspricht.
+	
+	\newpage
+	
+	Zusammenhang von e/m mit I, U und r:\\
+	Eliminiere B mit dem Kalibrierungsfaktor $K=B/I$ für die Helmholtzspulen. Somit wird aus Gleichung (1):
+	\begin{align}
+	\frac{e}{m}=\frac{2U}{r^2K^2I^2}
+	\end{align}
+	Somit sieht man, dass e/m
+	\begin{itemize}
+		\item direkt proportional zu U ist
+		\item indirekt proportional zum Quadrat von r ist
+		\item indirekt proportional zum Quadrat von I ist
+	\end{itemize}
+
+	Idee zur graphischen Ermittlung von e/m bei konstantem Radius r:\\
+	\begin{align*}
+	\frac{2U}{r^2K^2}=\frac{e}{m}I^2
+	\end{align*}
+	Man trägt also einfach $\frac{2U}{r^2K^2}$ gegen $I^2$ auf und erhält eine Gerade mit Steigung e/m.
+	
+	\subsection{Aufgabe 2}
+	
+	Ein mit U beschleunigtes Elektron wird unter dem Winkel $\alpha$
+	in ein Magnetfeld $\vec{B}$ geschossen. Für $\alpha\neq0$ kann man den Geschwindigkeitsvektor in zwei Komponenten $v_{\perp}$ senkrecht zu $\vec{B}$ und $v_{\parallel}$ parallel zu $\vec{B}$ zerlegen. Der senkrechte Anteil bewirkt die Kreisbewegung, während der parallele Anteil dafür sorgt, dass sich das Elektron auf seiner Kreisbahn parallel zum Magnetfeld bewegt. Daher bewegt sich das Elektron auf einer Spiralbahn.\\
+	Berechnung des Bahnradius:\\
+	$v_{\perp}=vsin(\alpha)$\\
+	$v_{\parallel}=vcos(\alpha)$\\
+	Aus Gleichung (2) und (3) folgt
+	\begin{equation}
+	r=\frac{mv_{\perp}}{eB}=\sqrt{2eUm}\frac{sin(\alpha)}{eB}
+	\end{equation}
+	Berechnung der Umlaufzeit einer Kreisbewegung mit der Larmor-Frequenz:
+	\begin{align*}
+	v_{\perp}=\omega r=2\pi \nu r
+	\end{align*}
+	\begin{align*}
+	\nu=\frac{v_{\perp}}{2\pi r}=\frac{1}{T}
+	\end{align*}
+	
+	
+	
+	\begin{align}
+	T=\sqrt{\frac{m}{2eU}}\frac{2\pi r}{sin(\alpha)}
+	\end{align}
+	
+	\newpage
+	
+	Berechnung der Schraubenhöhe h (= Abstand zwischen zwei Umläufen):
+	\begin{align}
+	h=v_{\parallel}T=\sqrt{\frac{2eU}{m}}cos(\alpha)\sqrt{\frac{m}{2eU}}\frac{2\pi r}{sin(\alpha)}=cot(\alpha)2\pi r
+	\end{align}
+	
+	\subsection{Aufgabe 3}
+	
+	Wie kann man den Einfluss des Erdmagnetfeldes auf die Elektronenbahn vermeiden?\\
+	Das Magnetfeld der Erde geht auf der Nordhalbkugel in den Boden, also hat man eine Komponente die parallel zum Boden nach Norden zeigt und eine, welche senkrecht in den Boden geht. Wenn man den Strahl so aufbaut, dass er von Osten nach Westen geht, wird er durch beide Komponenten abgelenkt. Wenn man ihn von Westen nach Osten gehen lässt, genau anders herum. Wenn man dann jede Messung einmal in beide Richtungen durchführt und die Ergebnisse mittelt, hebt sich die Ablenkung auf.\\
+	Alternativ kann man mithilfe Helmholtzspulen den Strahl so einstellen, bis er gerade geht.
+	
+	\section{Versuchsvorbereitung}
+	\subsection{Versuchsaufbau Thomson-Röhre}
+	Benötigte Geräte:
+	\begin{itemize}
+\item Thomson-Röhre in Helmholtzspule
+\item Netzgerät für Spulenstrom
+\item Hochspannungsnetzgerät für Anodenspannung
+\item Multimeter als Spannungsmesser
+\item Multimeter als Strommesser
+\end{itemize}
+Bei der Thomson-Röhre werden in einen evakuierten Glaskolben mithilfe eines Hochspannungsnetzgerätes, Elektronen aus einer Wolfram-Glühkathode und einer zylinderförmigen Anode beschleunigt und zu einen Elektronenstrahl gebündelt. Mithilfe eines Plattenkondensators und einer Helmholtspule kann der Elektronenstrahl elektrisch und magnetisch abgelenkt werden. Durch einen Floureszenzschirm mit mm-Raster wird die Ablenkung des Elektronenstrahls sichtbar gemacht.
+	\subsection{Messaufgaben Thomson-Röhre}
+	Während des gesamten Versuches darf die Anodenspannung den Maximalwert von 4 kV und der Spulenstrom den Wert 0,9 A nicht übersteigen. \\
+	Die Messungen werden in einen abgedunkelten Raum durchgeführt, damit der Elektronenstrahl besser sichtbar ist.
+	\begin{enumerate}
+\item Wie verhält sich der Elektronenstrahl unter Änderung der Anodenspannung und des Spulenstromes?
+\item Bestimmen des Krümmungsradius r des abgelenkten Elektronenstrahls mithilfe folgender Gleichung:
+\begin{align*}
+r=\frac{80^2mm^2+e^2}{\sqrt{2}(80mm-e)}
+\end{align*}
+\item Bestimmen der magnetischen Flussdichte des Magnetfeldes durch folgende Gleichung:
+\begin{align*}
+B=(\frac{4}{5})^{\frac{3}{2}}*\frac{{\mu}_0*n}{R}*I=K*I
+\end{align*}
+Der Kalibrier-Faktor für den angegebenen Aufbau ist laut Hersteller K~=~3,5~mT/A bzw.
+K~=~4,2~mT/A.
+\item Bestimmen von e/m aus Spannung, Magnetfeld und Radius.
+\item Aufnehmen von Werteparren I und U bei konstanten Radius r.
+\item Fehlerbetrachtung für der Messungen.
+\item Graphisches bestimmen von e/m mit Berücksichtigung der Fehler.
+\end{enumerate}
+	
+	\subsection{Versuchsaufbau Doppelstrahlröhre}
+	Benötigte Geräte:
+	\begin{itemize}
+\item Doppelstrahlröhre in Helmholtzspule
+\item Netzgerät
+\item Multimeter als Spannungsmesser
+\item Multimeter als Strommesser
+\end{itemize}
+Eine Doppelstrahlröhre ist eine mit Helium befüllte, teilevakuierten, Doppelstrahlröhre mit tangentialen und axialen Elektronenstrahl mit je einer inderekt beheizten Oxid-Kathode. Die senkrecht zueinander
+angeordneten Elektronenstrahlen erlauben eine gemeinsame Ablenkplatte für beide Elektronenkanonen. In dem Glaskörper können sich fast alle Elektronen im Elektronenbündel ungehindert bewegen. 
+Durch Zusammenstöße mit Heliumatomen wird die Elektronenbahn sichtbar.
+	\subsection{Messaufgaben Doppelstrahlröhre}
+Während des gesamten Versuches darf die Plattenspanung den Maximalwert von 45 V und der Spulenstrom den Wert 0,4 A nicht übersteigen.
+	 \begin{enumerate}
+	 \item Berechnen von e/m durch Messung des Radius, der Stromstärke und der Plattenspannung mithilfe Formel (4).
+	 Das
+Magnetfeld lässt sich durch die Helmholtz-Anordnung über folgende Beziehung bestimmen:
+\begin{align*}
+B^2=17,39*10^{-6}*{I_H}^2
+\end{align*}
+	 \item Berechen e/m für drei weitere Radien bei konstanter Plattenspannung.
+	 \item Fehlerbetrachtung der Messung.
+	 \end{enumerate}
+	
+    
+	
+	
+	
+	
+	\end{document}
+	
