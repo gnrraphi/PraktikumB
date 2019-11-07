@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc10" dpi="96" arch="Win64" script="muParser" windows="2" expand="1" log="[2019-11-07 15:47:00&#9;Diagramm: ''Grafik1'']&#10;Lineare Regression von Datensatz: Tabelle1_2, unter Verwendung der Funktion: A*x+B&#10;Sortieren: Nein&#10;Gewichtungsmethode: Instrumentell: unter Benutzung der Fehlerbalken (w_i = 1/er_i**2), unter Benutzung der Fehlerbalkendaten: Tabelle1_4&#10;Von x = 7,5625000000000e-02 bis x = 3,8440000000000e-01&#10;&#10;Parameter                           Wert                                     Fehler                                  &#10;--------------------------------------------------------------------&#10;B (y-intercept)                    5,9837077459740e+09  1,2494791242830e+09  &#10;A (slope)                             5,7371754052774e+10  5,6813470349290e+09  &#10;--------------------------------------------------------------------&#10;Fehler wurden skaliert mit sqrt(Chi^2/doF) = 6,3466333303553e+00&#10;&#10;Statistiken                                                       Tabelle1_2                                                      &#10;--------------------------------------------------------------------------&#10;N (Datenpunkten)                                          6                                                                       &#10;Freiheitsgrade (doF)                                     4                                                                       &#10;Chi^2/doF                                                      4,0279754629977e+01                              &#10;RSS (Summe der quadrierten Restwerte)  1,6111901851991e+02                              &#10;R                                                                       9,8094609484015e-01                               &#10;R^2                                                                  9,6225524098213e-01                               &#10;Angepasstes R^2                                          9,5281905122766e-01                               &#10;RMSE (Standardabweichung)                       6,3466333303553e+00                              &#10;--------------------------------------------------------------------------&#10;[2019-11-07 15:50:29&#9;Diagramm: ''Grafik1'']&#10;Lineare Regression von Datensatz: Tabelle1_2, unter Verwendung der Funktion: A*x+B&#10;Sortieren: Nein&#10;Gewichtungsmethode: Instrumentell: unter Benutzung der Fehlerbalken (w_i = 1/er_i**2), unter Benutzung der Fehlerbalkendaten: Tabelle1_4&#10;Von x = 7,5625000000000e-02 bis x = 3,8440000000000e-01&#10;&#10;Parameter                           Wert                                     Fehler                                  &#10;--------------------------------------------------------------------&#10;B (y-intercept)                    5,9837077459740e+09  1,2494791242830e+09  &#10;A (slope)                             5,7371754052774e+10  5,6813470349290e+09  &#10;--------------------------------------------------------------------&#10;Fehler wurden skaliert mit sqrt(Chi^2/doF) = 6,3466333303553e+00&#10;&#10;Statistiken                                                       Tabelle1_2                                                      &#10;--------------------------------------------------------------------------&#10;N (Datenpunkten)                                          6                                                                       &#10;Freiheitsgrade (doF)                                     4                                                                       &#10;Chi^2/doF                                                      4,0279754629977e+01                              &#10;RSS (Summe der quadrierten Restwerte)  1,6111901851991e+02                              &#10;R                                                                       9,8094609484015e-01                               &#10;R^2                                                                  9,6225524098213e-01                               &#10;Angepasstes R^2                                          9,5281905122766e-01                               &#10;RMSE (Standardabweichung)                       6,3466333303553e+00                              &#10;--------------------------------------------------------------------------&#10;">
+	<window type="1" name="Tabelle1" date="2458794.5702519" x="639" y="0" w="612" h="620">
+		<tab rows="30" cols="4" labels="0">
+			<col name="I^2" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.2116;0.075625;0.25;0.3844;0.174724;0.3136;"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="17100000000;11400000000;20000000000;29800000000;14700000000;24500000000;"/>
+			<col name="3" type="6" num="0" prec="13" plot="4" width="100" stat="0" data="0.046;0.0375;0.05;0.062;0.0418;0.056;"/>
+			<col name="4" type="6" num="0" prec="13" plot="5" width="100" stat="0" data="203000000;163000000;224000000;293000000;186000000;255000000;"/>
+		</tab>
+	</window>
+	<window type="3" name="Grafik1" date="2458794.6599939" x="0" y="0" w="602" h="500" active="1" dpi="96">
+		<layout cw="586" ch="441" w="420" h="315" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="34" w="516" h="402" autoscale="1" maxMajorTicks="20" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00853242" y="0.0770975" w="0.880546" h="0.911565"/>
+			<title text="Bestimmung von e/m mit der Thomson-Röhre" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="331"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="83" y="74" w="420" h="315" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="1" z="21" table="Tabelle1" x="I^2" y="2" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="0" z="22" table="Tabelle1" col="3" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0" cap="8" plus="1" minus="1" symb="1"/>
+				<errors type="1" z="23" table="Tabelle1" col="4" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<curve type="19" z="24" name="LinearFit1" f="0" y="A*x+B" from="0.075625" to="0.3844" points="2" line="1" lc="#ff0000" lw="3" ls="0" brc="#000000" brs="0">
+				<param name="A" val="57371754052.7737"/>
+				<param name="B" val="5983707745.97401"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="10000000000" to="35000000000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="2U(Kr)^(-2) [VA²(Tm)^(-2)]" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="174"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="10000000000" to="35000000000" step="0" maj="6" min="5" type="0"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="0.5" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="I² [A²}" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="0.5" step="0" maj="6" min="5" type="0"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<item type="2" x="0.0119331742243437" y="34203821656.051" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8.25,-1,5,50,0,0,0,0,0" text="\l(1)Messpunkte&#10;Fitfunktion: 5,74*10^10 x + 5,98*10^9&#10;\l(2)e/m=5,74*10^10"/>
+			<filter type="0" inCrv="0" from="0.075625" to="0.3844" outCrv="3" points="2" recalc="1" sort="0" fmt="e" prec="13" modifiedData="0" sclErr="1" chi2="161.119018519906" func="1" weightMethod="1" weightData="Tabelle1_4">
+				<parameter name="B" val="5983707745.97401" explain="y-intercept" err="3.87588776634987e+16"/>
+				<parameter name="A" val="57371754052.7737" explain="slope" err="8.01338151828651e+17"/>
+			</filter>
+		</tab>
+	</window>
+</qti>
