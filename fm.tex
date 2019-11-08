@@ -6,6 +6,9 @@
 \usepackage{amsmath}
 \usepackage[section]{placeins}
 \usepackage{graphicx}
+\usepackage{esvect}
+
+
 
 
 \title{Praktikum B Vorbereitung zu Versuch "fm"}
@@ -159,7 +162,94 @@
 		\end{align}
 		Es ist also möglich, durch die Integration der Induktionsspannung die magnetischen Flüsse zu messen. Wenn A bekannt ist, erhält man auch die magnetische Flussdichte B.
 	
-		
-		
+	
+
+\section{Aufgaben zur Vorbereitung}
+
+\subsection{Aufgabe 1}
+Einheitenbetrachtung wichtiger Größen des Versuchs:
+\begin{itemize}
+	\item Magnetische Flussdichte $[\vec{B}]=1~\frac{Vs}{m^2}=1~T$
+	\item Magentische Feldstärke $[\vec{H}]=1~\frac{A}{m}$
+	\item Magentisiertung $[\vec{M}]=1~\frac{A}{m}$
+	\item Magnetischer Fluss $[\Phi]=1~Tm^2=1~Vs=1~Wb$
+	\item Magnetische Permeabilität $[\mu_r]=1$
+	\item Magnetische Feldkonstante $[\mu_0]=1~\frac{Vs}{Am}$ 
+	\item Stromdichte $[\vec{j}]=1~\frac{A}{m^2}$
+\end{itemize} 
+
+\subsection{Aufgabe 2}
+Wie lautet der Zusammenhang zwischen $\mu$ und $\chi$?\\
+Aus Gleichung (fm.5) im Skript folgt $\mu$ = $\mu_r$$\mu_0$. \\
+Weiterhin gilt mit Gleichung (fm.6) $\mu_r$ = 1 + $\chi$. \\
+Eingesetzt folgt somit $\mu$ = (1 + $\chi$) $\mu_0$
+
+\subsection{Aufgabe 3}
+Beschreibung der Unterschiede zwischen Diamagnetismus, Paramagnetismus und Ferromagnetismus: \\
+Diamagnetismus: Diamagnetische Materialien induzieren beim Anlegen eines äußeren Magnetfelds ein Magnetfeld, das dem äußeren Magnetfeld entgegenwirkt. Sie bewegen sich somit aus einem Magnetfeld heraus. Bei besonders starken Magnetfeldern und leichten diamagnetischen Materialien kann es vorkommen, dass die Abstoßung der diamagnetischen Kreisströme die Gewichtskraft kompensiert und sich die Objekte im Magnetfeld bewegen. \\
+Paramagnetismus: Paramagnetische Materialien induzieren beim Anlegen eines äußeren Magnetfelds ein Magnetfeld, das in die gleiche Richtung wie das äußere Magnetfeld wirkt. Um diese Eigenschaft zu zeigen, muss ein Stoff ungepaarte Elektronen, freie Atome oder Ionen mit nur teilweise gefüllten Schalen besitzen. \\
+Ferromagnetismus: Ferromagnetische Materialien enthalten innere magnetische Momente, die auch ohne ein äußeres Magnetfeld parallel ausgerichtet sein können.
+\subsection{Aufgabe 4}
+$\mu_r$ für magnetische Materialien: \\ \\
+\begin{tabular}{|c|c|c|} \hline
+	 & $\mu_r$ & X \\ \hline
+	diamagnetisch & 0<...<1 & -1<...<0 \\ \hline
+	paramagnetisch & >1 & >0 \\ \hline
+	ferromagnetisch & >>1 & >>1 \\ \hline
+	Vakuum & 1 & 0 \\ \hline
+\end{tabular} \\ \\ \\
+Supraleiter (ideal diamagnetisch): $\mu_r$ = 0 \\
+Vakuum (neutral): $\mu_r$ = 1 \\
+Luft (paramagnetisch):  $\mu_r$ = 1 - 4 * $10^{-7}$ \\
+Eisen (ferromagnetisch):  $\mu_r$ = 300 - 10000 \\
+\subsection{Aufgabe 5}
+Parallelität der Vektoren $\vec{B}$ und $\vec{H}$: \\
+Für magnetisch isotrope Materialien sind die Vektoren stets parallel. \\
+Bei anisotropen Materialien werden die Vektoren laut Skript mit einem Tensor verknüpft.
+\subsection{Aufgabe 6}
+Größe der "differentiellen Permeabilität" $\frac{\partial B}{\partial H}$, wenn die Sättigungsmagnetisierung erreicht ist: \\
+Für die Sättigungsmagnetisierung gilt: \\
+\begin{align*}
+\frac{\partial \vec{B}}{\partial \vec{H}} = \frac{\partial}{\partial \vec{H}} \mu_0 (\vec{H} + \vec{M}) = \mu_0 \frac{\partial \vec{H}}{\partial \vec{H}}+ \frac{\partial \vec{M}}{\partial \vec{H}} = \mu_0 + 0 = \mu_0 
+\end{align*}
+\subsection{Aufgabe 7}
+Qualitative Skizze von B(H) und M(H): \\ \\ \\
+\subsection{Aufgabe 8}
+Wie kann man einen ferromagnetischen Körper in einen "entmagnetisierten Zustand" bringen? \\
+Dies wird erreicht, indem man den Körper höher als seine Curie-Temperatur $T_C$ erhitzt. Dabei sortieren sich die magnetischen Momente des Materials neu und gehen in einen energetisch günstigeren, entmagnetisierten Zustand. Eine weitere Möglichkeit stellen das Entmagnetisieren durch starke Erschütterungen und das Anlegen einer Wechselspannung, die langsam auf Null reduziert wird, dar.
+\subsection{Aufgabe 9}
+Querspalt und Längsspalt bei Magneten \\
+Ein Querspalt im Magneten ist senkrecht zu den Feldlinien von $\vec{B}$ und $\vec{H}$ orientiert. Zur Messung der Feldstärke im Inneren des Querspalts und damit auch im Inneren des Materials wird eine transversale Hallsonde verwendet.
+Ein Längsspalt dagegen verläuft parallel zu den Feldlinien des Magnetfelds. Sein Magnetfeld wird mit einer longitudinalen Hallsonde gemessen.
+\subsection{Aufgabe 10}
+Warum müssen die Spalte zur Messung von $\vec{B}$ und $\vec{H}$ in ferromagnetischem Material möglichst eng sein? \\
+Bei breiteren Spalten würde es zu stärkeren Streufeldern kommen, die die Messung von $\vec{B}$ und $\vec{H}$ verfälschen würden.
+\subsection{Aufgabe 11}
+Ist $\vec{B}$ in einem nicht-durchgehenden Querspalt genauso groß wie in einem durchgehenden? \\
+In einem durchgehenden Querspalt fällt das $\vec{B}$-Feld, also die magnetische Flussdichte, stärker ab.
+\subsection{Aufgabe 12}
+Wirkungsweise einer Hallsonde: \\
+Eine Hallsonde ist ein Leiter, auf dessen Ladungsträger im Magnetfeld die Lorentzkraft wirkt, sodass die Ladungsträger abgelenkt werden. Diese Ablenkung erzeugt die sogenannte Hallspannung $U_H$, die mit der Hallsonde gemessen wird und aus der die magnetische Flussdichte berechnet werden kann. \\
+Geometriebedingte Nullfeldsignale kann man durch eine angelegte Gegenspannung vermeiden.
+\subsection{Aufgabe 13}
+Das Magnetfeld einer langen Zylinderspule fällt zu den Spulenden hin ab. \\
+Wir sollen die Größe des Feldes an den Spulenenden im Vergleich zur Feldstärke im Mittelpunkt der Spule abschätzen: \\
+Die Feldlinien im Inneren der Spule laufen annähernd parallel, falls die Länge der Spule wesentlich größer als ihr Radius ist. Somit ist die magnetische Feldstärke im Inneren der Spule groß und wird zum Spulenende hin kleiner. Dabei gilt: \\
+B $\approx$ In/l \\
+mit der Windungszahl n, der Spulenlänge l und dem Spulenstrom I.
+\subsection{Aufgabe 14}
+Gesucht: Formel für die magnetische Feldstärke H einer langen Spule als Funktion des Ortes auf der Symmetrieachse sowie graphische Darstellung dieser Abhängigkeit für eine 8 cm lange Spule mit Durchmesser D = 5,5 cm,  Windungszahl n = 500 und Stromstärke I = 2,5 A im Intervall von +- 7 cm um die Spulenmitte. \\ \\
+\begin{equation}
+	H(x) = \frac{In}{2l} [\frac{\frac{l}{2}-x}{\sqrt{(\frac{l}{2}-x)^2+r^2}}+\frac{\frac{l}{2}+x}{\sqrt{(\frac{l}{2}+x)^2+r^2}}]
+\end{equation}
+Skizze: \\ \\ \\ 
+
+\subsection{Aufgabe 15}
+Betrag des Endmagnetfelds: \\
+Das Erdmagnetfeld variiert mit dem Breitengrad, an dem die Messung stattfindet. Sein Betrag beträgt am Äquator ungefähr 30 $\mu$T = 0,3 Gauss und an den Polen ungefähr das Doppelte.
+\subsection{Aufgabe 16}
+Anwendungen von ferromagnetischen Stoffen in der Praxis: \\
+Ferromagnete werden unter anderem als Dauermagnete, Elektromotoren, Transformatoren und auch als magnetische Datenspeicher verwendet. Modernstes Beispiel für Datenspeicherung mithilfe von Ferromagneten ist Fe-RAM, Ferroelectric RAM.
+
 	
 \end{document}
