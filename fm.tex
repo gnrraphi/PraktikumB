@@ -1,1 +1,165 @@
-fm
+\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+
+
+\title{Praktikum B Vorbereitung zu Versuch "fm"}
+\author{Leon Machtl und Raphael Lehner}
+\date{15.11.2019}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{Einleitung zum Versuch}
+		In diesem Versuch geht es um ferromagnetische Stoffe. Er soll dazu dienen, die grundlegenden Phänomene solcher Stoffe kennenzulernen und zu untersuchen. Von besonderer Wichtigkeit sind dabei die Zusammenhänge zwischen der magnetischen Flussdichte, der magnetisches Feldstärke und der Magnetisiserung. Eine Hall-Sonde dient als Feldmessgerät. Damit wird das Erdmagnetfeld gemessen, sowie die magnetische Feldstärke einer Luftspule ermittelt und anschließend der Einfluss eines Eisenkerns auf das Magnetfeld der Spule untersucht. Außerdem wird das Hystereseverhalten B(H) des Eisenkerns ermittelt.
+	
+	\subsection{Wichtige Formeln}
+		Die magnetischen Eigenschaften von Materie können durch die Magnetisierung \(\vec{M}\) dargestellt werden. Zusammen mit der magnetischen Feldstärke kann man mit ihr die Flussdichte berechnen:
+		\begin{align}
+		\vec{B}=\mu_{0} (\vec{H} + \vec{M})
+		\end{align}
+		Dabei ist jedoch zu beachten, dass die Magnetisierung selbst von \(\vec{H}\) abhängt:
+		\begin{align}
+		\vec{M}=\chi \vec{H} 
+		\end{align}
+		Dabei bezeichnet \(\chi\) die magnetisches Suszeptibilität. Die magnetische Suszeptibilität ist eine physikalische Größe ohne Einheit, die die Magnetisierbarkeit von Materie in einem externen Magnetfeld angibt. Im einfachsten Fall gibt sie das Verhältnis der Magnetisierung zur Feldstärke an, im Allgemeinen Fall jedoch handelt es sich bei \(\chi\) um einen 3 x 3-Tensor.\\
+		Eine weitere Möglichkeit, die magnetische Flussdichte zu berechnen, ist durch diese Formel mit der relativen Permeabilität \(\mu_{r}\) gegeben:
+		\begin{align}
+		\vec{B}=\mu_{r} \mu_{0} \vec{H} 
+		\end{align}
+		wobei \(\mu_{r}\) durch
+		\begin{align}
+		\mu_{r}=1+\chi 
+		\end{align} 
+		bestimmt werden kann. Da jedoch die Zusammenhänge zwischen \(\vec{B}\) und \(\vec{H}\) sowie \(\vec{M}\) und \(\vec{H}\) im Allgemeinen eben nicht linear sind wie oben, definiert man die Werte besser differentiell:
+		\begin{align}
+		\mu_{r} \mu_{0}=\mu =\frac{\partial B}{\partial H}
+		\end{align}
+		\begin{align}
+		\chi=\frac{\partial M}{\partial H}
+		\end{align}
+		\newpage
+		
+	\subsection{Ferromagnetismus}
+		
+		Ferromagnetismus bezeichnet eine Art des Magnetismus von Festkörpern und kann dadurch erklärt werden, dass sich die magnetischen Momente der Atome des Stoffes parallel ausrichten, auch dann, wenn sie sich in einem äußerem Magnetfeld befinden und die Temperatur niedriger als die Curie-Temperatur ist. Der Effekt liegt in einer Wechselwirkung zwischen den Atomen, die zur Folge hat, dass die Gesamtenergie des ferromagnetischen Stoffes mit einer solchen Ordnung geringer ist als mit einer ungeordneten Konfiguration, begründet.
+		
+	\subsection{Weiss'sche Bezirke}
+		
+		Häufig entsteht in ferromagnetischen Körpern eine magnetische Struktur aufgrund der Tatsache, dass sich die magnetischen Momente der Atome parallel ausrichten. Diese Struktur bezeichnet man als "Weiss'sche Bezirke". Die "Bezirke" sind Zonen, in denen die magnetischen Momente in die selbe Richtung zeigen und sind meistens nur wenige Kubikmikrometer groß. Wenn ein Körper sehr viel größer ist als die Ausdehnung eines solchen Bezirks, betrachtet man den Körper als homogen magnetisiert. Die effektive Magnetisierung ist dann kleiner als die der einzelnen Bezirke. Heben sich die Magnetisierungen der einzelnen Bezirke gegenseitig auf, nennt man das den entmagnetisierten Zustand des Körpers.
+		
+	\subsection{Hysteresekurve}
+	
+		In einer Hysteresekurve wird die magnetische Flussdichte \(B\) gegen die magnetische Feldstärke \(H\) aufgetragen. Dabei wird der Strom zeitlich verändert:
+		\begin{align}
+		I(t)=I_{0}t
+		\end{align}
+		Dabei ändert sich auch die magnetische Feldstärke:
+		\begin{align}
+		H(t)=H_{0}t
+		\end{align}
+		Aufgrund von magnetischen Anisotropien und komplexer Dynamik der Weiss'schen Bezirke verläuft die Hysteresekurve nicht gleichmäßig, sondern wie in der Abbildung.B verhält sich wie folgt:
+		\begin{align}
+		B=\mu_{0}H+M_{max}
+		\end{align}
+		Wenn H hohe Werte annimmt, verändert sich B also nur noch langsam, da sich alle magnetischen Dipole ausgerichtet haben und somit \(M_{max}\) konstant ist. Tritt dieser Fall ein, nennt man das magnetische Sättigung. Wird H wieder verringert, folgt B nicht der bisherigen Kurve.
+		\newpage
+		
+	\subsection{Messung von \(\vec{B}\) und \(\vec{H}\) im Quer- und Längsspalt}
+	
+		Eine direkte Messung der beiden Felder ist in festen Stoffen mit einer makroskopischen Messsonde offensichtlich nicht wirklich möglich, daher misst man mit kalibrierten Hall-Sonden in Hohlräumen der ferromagnetischen Proben. Dabei muss man darauf achten, dass der Feldverlauf in der Probe durch die Hohlräume möglichst wenig gestört wird. Mit den im Folgenden aufgeführten Formeln, die aus den Maxwellgleichungen folgen, kann man mit den Messonden in den Hohlräumen auf die magnetische Flussdichte \(\vec{B}\) und die magnetische Feldstärke \(\vec{H}\) im Festkörper schließen.\\
+		\\
+		Querspalt (Spalt liegt senkrecht zu H):\\
+		Da \(\vec{B}\) quellenfrei ist, folgt unter der Annahme, dass Streufelder und entmagnetisierende Felder vernachlässigbar sind und eine homogene Magnetisierung vorliegt nach kurzer Rechnung und Anwendung des Gaußschen Satzes:
+		\begin{align}
+		\vec{B_{E}}=\vec{B_{L}}
+		\end{align}
+		wobei die linke Seite die magnetische Flussdichte im ferromagnetischen Stoff (z.B. Eisen) und die rechte Seite die magnetische Flussdichte im Luftspalt darstellt. Somit erhält man bei der Messung von \(B_{L}\) mit einer transversalen Hall-Sonde direkt den Wert von \(B_{E}\), den man sucht.\\
+		\\
+		Längsspalt (Spalt liegt parallel zu H):\\
+		Da die Wirbel der magnetischen Feldstärke \(\vec{H}\) makroskopischen Strömen mit einer Dichte \(\vec{j}\) entsprechen, kann man mit den selben Annahmen wie beim Querspalt und mit dem Wissen, dass hier die Stromdichte im Eisen und in der Luft 0 ist über eine rechteckige Fläche die teilweise durch das Eisen und teilweise durch die Luft verläuft, integrieren und erhält mit Hilfe des Stokesschen Satzes die Beziehung:
+		\begin{align}
+		\vec{H_{E}}=\vec{H_{L}}
+		\end{align}
+		Was analog zu oben den magnetischen Feldstärken im Eisen und in der Luft entspricht. Somit kann man mit einer longitudinalen Hall-Sonde die magnetische Flussdichte im Eisen bestimmen um über folgende Beziehung, die aus Gleichung (3) folgt, die magnetische Feldstärke im Eisen zu berechnen:
+		\begin{align}
+		H_{E}=H_{L}=\frac{1}{\mu_{0}}B_{L}
+		\end{align}
+		
+	\subsection{Der magnetische Kreis}
+	
+		Ein magnetischer Kreis besteht aus k Elementen mit der länge \(l_{k}\) mit den Querschnittsflächen \(f_{k}\). Dabei gilt, dass es näherungsweise keinen Streufluss gibt, es also gilt:
+		\begin{align}
+		\phi_{k}=B_{k}f_{k}=const.
+		\end{align}
+		\(\phi\) wird auch magnetischer Strom genannt.
+		Es besteht somit eine Ähnlichkeit zu einem Stromkreis, bei dem überall der gleiche Strom fließt. Die magnetische Spannung ergibt sich durch:
+		\begin{align}
+		nI=\sum_{k}^{}H_{k}l_{k}
+		\end{align}
+		wobei \(n\) die Windungszahl der Spule ist und \(I\) der Spulenstrom. Folgender Ausdruck wird als magnetischer Widerstand bezeichnet:
+		\begin{align}
+		R_{mag}:=\sum_{k}^{}\frac{l_{k}}{\mu_{0}\mu_{k}f_{k}}
+		\end{align}
+		Somit folgt das Ohmsche Gesetz des Magnetischen Kreises:
+		\begin{align}
+		nI=\phi R_{mag}
+		\end{align}
+		Der im Experiment verwendete Eisenkern lässt sich  als Torus beschreiben. Somit gilt nach Gleichung (14)
+		\begin{align}
+		H(r)=\frac{nI}{2\pi r}
+		\end{align}
+		Wird der Eisenkern durch einen Querspalt unterbrochen, so erhält man unter Vernachlässigung von Streufeldern diese Zusammenhänge:
+		\begin{align}
+		\vec{B_{E}}=\mu_{0}(\vec{H_{E}}+\vec{M})
+		\end{align}
+		\begin{align}
+		\vec{B_{L}}=\mu_{0}\vec{H_{L}}
+		\end{align}
+		Aus Gleichung (10) folgt dann
+		\begin{align}
+		\vec{H_{L}}=\vec{H_{E}}+\vec{M}
+		\end{align}
+		Somit gilt für die hier vorliegende Situation:
+		\begin{align}
+		nI=H_{L}l_{L}+H_{E}l_{E}
+		\end{align}
+		Aus obigen Gleichungen folgt:
+		\begin{align}
+		B_{E}=B_{L}=\mu_{0}(\frac{nI}{l}+M\frac{l_{E}}{l})
+		\end{align}
+		Für kleine \(l_{L}\) wird also die magnetische Flussdichte durch den Eisenkern um \(\mu_{0}\) mal die Magnetisierung verstärkt. Es folgt außerdem:
+		\begin{align}
+		H_{E}=(\frac{nI}{l}-M\frac{l_{L}}{l})
+		\end{align}
+		Also wird das magnetisierende Feld durch den Luftspalt verringert.
+		
+		\newpage
+		
+	\subsection{Induktionsgesetz}
+	
+		Aus der Formel für den magnetischen Fluss durch eine Fläche A senkrecht zur magnetischen Flussdichte B ergibt sich die Formel für den Fluss in einem ringförmigen Eisenkern in einer stromdurchflossenen Spule mit N Windungen:
+		\begin{align}
+		\phi=AB=A\mu_{r}\mu_{0}H=A\mu_{r}\mu_{0}\frac{NI}{l}
+		\end{align}
+		wobei A der Querschnitt des Eisenkerns. Durch eine Änderung des Flusses wird eine Spannung induziert:
+		\begin{align}
+		V_{ind}=-N_{m}\frac{\partial \phi}{\partial t}=-N_{m}N\frac{A}{l}\mu_{0}\frac{\partial \mu_{r}I}{\partial t}
+		\end{align}
+		wobei \(M_{m}\) die Windungszahl einer zusätzlichen Spule bezeichnet, die genutzt wird um die induzierte Spannung abzugreifen (Induktionsspule). Durch Integration der Integrationsspannung über die Zeit erhält man:
+		\begin{align}
+		\int_{0}^{t}V_{ind}dt'=-N_{m}A[B(t)-B(0)]=-N_{m}[\phi(t)-\phi(0)]
+		\end{align}
+		Es ist also möglich, durch die Integration der Induktionsspannung die magnetischen Flüsse zu messen. Wenn A bekannt ist, erhält man auch die magnetische Flussdichte B.
+	
+		
+		
+	
+\end{document}
