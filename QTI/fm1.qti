@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc10" dpi="96" arch="Win64" script="muParser" windows="2" expand="1">
+	<window type="1" name="Tabelle1" date="2458801.5713497" x="0" y="0" w="765" h="562">
+		<tab rows="31" cols="6" labels="0">
+			<col name="1" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="-0.07;-0.065;-0.06;-0.055;-0.05;-0.045;-0.04;-0.035;-0.03;-0.025;-0.02;-0.015;-0.01;-0.005;0;0.005;0.01;0.015;0.02;0.025;0.03;0.035;0.04;0.045;0.05;0.055;0.06;0.065;0.07;"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="100" stat="0" muparser="1" data="2.2;2.73;3.4;4.35;5.43;7.18;9.34;11.75;13.71;15.06;16.18;16.69;17.08;17.69;17.45;16.96;16.18;14.86;13.58;12.12;10.62;8.9;7.47;6.02;4.93;4.06;3.27;2.73;2.25;#;"/>
+			<col name="3" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;2&quot;)/(4*Pi*10^-7)" stat="0" muparser="1" data="1750704.37401085;2172464.97320437;2705634.03256222;3461620.01224872;4321056.70494496;5713662.45699904;7432535.84239151;9350352.90664884;10910071.3489494;11984367.2148197;12875634.8961343;13281480.0010187;13591832.1400479;14077254.7164781;13886268.7847679;13496339.1741927;12875634.8961343;11825212.2717278;10806620.6359397;9644789.55136885;8451127.47817964;7082394.96758934;5944437.12448229;4790563.78706605;3923169.34721522;3230845.34476547;2602183.31955249;2172464.97320437;1790493.10978382;"/>
+			<col name="4" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="-0.07;-0.065;-0.06;-0.055;-0.05;-0.045;-0.04;-0.035;-0.03;-0.025;-0.02;-0.015;-0.01;-0.005;0;0.005;0.01;0.015;0.02;0.025;0.03;0.035;0.04;0.045;0.05;0.055;0.06;0.075;0.08;"/>
+			<col name="5" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="7.22;9.3;11.68;14.62;17.35;20;18.75;3.1;0.13;0.05;0.06;0.07;0.07;0.09;0.09;0.09;0.09;0.09;0.1;0.31;2.16;16.3;20.1;18.43;15.49;12.88;10.6;8.44;7.11;"/>
+			<col name="6" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;5&quot;)/(4*Pi*10^-7)" stat="0" muparser="1" data="5745493.44561742;7400704.85377313;9294648.67656668;11634226.3400175;13806691.3132219;15915494.3091895;14920775.9148652;2466901.61792438;103450.713009732;39788.7357729738;47746.4829275686;55704.2300821633;55704.2300821633;71619.7243913529;71619.7243913529;71619.7243913529;71619.7243913529;71619.7243913529;79577.4715459476;246690.161792438;1718873.38539247;12971127.8619895;15995071.7807355;14666128.0059181;12326550.3424673;10249578.3351181;8435211.98387045;6716338.59847798;5657958.22691688;"/>
+		</tab>
+	</window>
+	<window type="3" name="Grafik1" date="2458801.6234609" x="765" y="0" w="602" h="500" active="1" dpi="96">
+		<layout cw="586" ch="441" w="420" h="315" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="34" w="516" h="604" autoscale="1" maxMajorTicks="20" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00853242" y="0.0770975" w="0.880546" h="1.36961"/>
+			<title text="Magnetfeld in einer Spule" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="184"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="83" y="74" w="420" h="315" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="1" z="21" table="Tabelle1" x="1" y="3" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="1" z="22" table="Tabelle1" x="4" y="6" from="0" to="-1" line="0" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="2" size="7" lc="#ff0000" lw="1" ls="0" brc="#ff0000"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-5000000" to="20000000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="H [mA/m]" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="63"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-5000000" to="20000000" step="0" maj="6" min="5" type="0"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-0.08" to="0.1" step="0" maj="10" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="Entfernung vom Mittelpunkt der Spule [m]" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="204" fmw="265"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-0.08" to="0.1" step="0" maj="10" min="5" type="0"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<item type="2" x="-0.0774224343675418" y="-1337579.61783439" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8.25,-1,5,50,0,0,0,0,0" text="\l(1)magnetische Feldstärke in Luftspule&#10;\l(2)magnetische Feldstärke in Luftspule mit Eisenkern"/>
+		</tab>
+	</window>
+</qti>
