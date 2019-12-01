@@ -1,0 +1,95 @@
+\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{amssymb}
+
+
+
+\title{Praktikum B Vorbereitung zu Versuch "of"}
+\author{Leon Machtl und Raphael Lehner}
+\date{12.12.2019}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{Einleitung zum Versuch}
+	(Platzhalter)
+	
+	\section{Fragen zur Vorbereitung und Durchführung}
+		
+		\subsection{Aufgabe 1}
+			Wie lautet die Abbildungsgleichung für Linsen und was bedeuten die einzelnen Größen?\\
+			\\
+			Die Abbildungsgleichung für Linsen lautet 
+			\begin{align*}
+			\frac{1}{f}=\frac{1}{g}+\frac{1}{b}
+			\end{align*}
+			Dabei steht \(f\) für die Brennweite der Linse (Abstand des Brennpunkts von der Hauptebene), \(g\) für die Gegenstandsweite (Abstand des Gegenstands von der Hauptebene) und \(b\) für die Bildweite (Abstand des Bildes von der Hauptebene).\\
+			Für den Abbildungsmaßstab \(A\) gilt die Beziehung
+			\begin{align*}
+			A=\frac{y'}{y}
+			\end{align*}
+			wobei \(y\) die Gegenstandsgröße und \(y'\) die Bildgröße bezeichnet. Zudem gilt außerdem
+			\begin{align*}
+			A=\frac{b}{g}
+			\end{align*}
+			Und somit folgt aus den beiden Beziehungen für \(A\)
+			\begin{align*}
+			\frac{y'}{y}=\frac{b}{g}
+			\end{align*}
+			
+		\subsection{Aufgabe 2}
+			Graphische Darstellung der Größen der Abbildungsgleichung und Konstruktion des Gegenstands \(G\). Vergleich der konstruierten Werte für Bildgröße und Bildweite mit den berechneten.\\
+			\\
+			(Skizze hier einfügen)\\
+			\\
+			
+		\subsection{Aufgabe 3}
+			Im Versuch benutzt man einen Laserstrahl, dessen enges Ausgangsstrahlbündel näherungsweise zu einem breiteren Parallelstrahl aufgeweitet wird.\\
+			\\
+			(Skizze einfügen)\\
+			\\
+			Dafür sollen zwei Linsen \(L_{1}\) und \(L_{2}\) verwendet werden. Dabei gilt für die Brennweite von \(L_{1}\) \(f_{1}=5mm\), wobei die  Aufweitung 10-fach sein soll. Für die Linse \(L_{2}\) stehen Linsen mit einer Brennweite von \(50mm\),\(100mm\) oder \(200mm\) zur Verfügung. Welche davon sollte man wählen? Wie groß müssen die Linsendurchmesser mindestens sein?\\
+			\\
+			Eine Aufweitung kann mit verschiedenen Linsensystemen erreicht werden, beispielsweise mit umgekehrten Teleskop-Aufbauten. Eine Möglichkeit wäre eine umgekehrte Kepler-Anordnung, diese besteht aus zwei bikonvexen Linsen mit einem gemeinsamen Brennpunkt. Dieser Aufbau kann für die Aufweitung eines Hochleistungs-Lasers jedoch nachteilig sein, da es in diesem gemeinsamen Brennpunkt zu einer sehr hohen Leistungsdichte kommen kann, die zur Funkenentladung der aufgeheizten Luft führen kann. Besser ist es daher, eine umgekehrte Galilei-Anordnung zu verwenden. Diese besteht aus einer bikonvexen und einer bikonkaven Linse. Zwar gibt es auch hier einen gemeinsamen Brennpunkt, dieser ist jedoch nicht reell. 
+			Somit wird der Nachteil der Kepler-Anordnung umgangen. Der in diesem versuch verwendete Laser ist aber schwach genug, um die Kepler-Anordnung verwenden zu können.\\
+			\\
+			(Skizze Kepler-Anordnung zur Vergrößerung)\\
+			\\
+			Für eine 10-fach Aufweitung gilt \(A=10\). Mit einer Linse \(L_{1}\) mit \(f_{1}=5mm\) und den Linsendurchmessern \(d\) und \(D\) gilt dann:
+			\begin{align*}
+			A=\frac{D}{d}=\frac{f_{2}}{f_{1}}
+			\end{align*}
+			was im Versuch zu optische Geräte gezeigt wurde. Durch Umformung erhält man
+			\begin{align*}
+			f_{2}=Af_{1}=10 \cdot 5mm=50mm
+			\end{align*}
+			Man sollte also für \(L_{2}\) die Linse mit der Brennweite von \(50mm\) verwenden, um eine 10-fache Aufweitung zu erreichen. Bei optischen Abbildungen an Linsen tritt immer Beugung auf, ein Punkt wird also nicht auf genau einen Punkt abgebildet, sondern auf ein sogenanntes Beugungsscheibchen oder auch Airy-Scheibchen abgebildet. Der Radius dieses Beugungsscheibchens beträgt dabei ungefähr
+			\begin{align*}
+			r=1,22\frac{\lambda f}{d}
+			\end{align*}
+			wobei \(\lambda\) die Wellenlänge des einfallenden Lichtes, \(f\) die Brennweite der Linse und \(d\) der Durchmesser der Linse ist. Damit das Beugungsscheibchen möglichst klein bleibt, muss also der Durchmesser von \(L_{1}\) groß sein im Vergleich zum Durchmesser des Laserstrahls sein. Der Durchmesser von \(L_{2}\) muss dann für die gewünschte Vergrößerung 10-mal so groß sein, wie der von \(L_{1}\).
+			
+		\subsection{Aufgabe 4}
+			Erläutern Sie die Begriffe „Primäres Bild“ und „Sekundäres Bild“ der Abbeschen Abbildungstheorie.
+			Wo liegen diese Bilder? Wie kann man das primäre Bild mathematisch beschreiben?\\
+			\\
+			Wird ein Objekt in einen mikroskopartigen Aufbau, wie der umgekehrten Kepler-Anordnung, gebracht, so entsteht in der Brennebene von \(L_{1}\) ein für die Topologie des betrachteten Objektes charakteristisches Interferenzmuster. Dieses Interferenzmuster wird nach Ernst Abbe als primäres Bild bezeichnet. Das sekundäre Bild bezeichnet dann die Vereinigung des primären Bildes (also des Interferenzmusters) mit den vom Objekt geradlinig ausgehenden Strahlen, die von dem optischen Instrument abgebildet werden. Dabei handelt es sich um ein entweder vergrößertes oder verkleinertes Bild des betrachteten Objektes. Dieses Bild befindet sich in der Bildebene. Das strukturierte Bild des Objektes ergibt sich erst durch diese Vereinigung der geradlinigen Strahlen mit dem Interferenzmuster, das durch Beugung entsteht.\\
+			\\
+			Wie ensteht das Interferenzmuster?\\
+			\\
+			Das Problem wird hier vereinfacht anhand der Beugung an einem Spalt betrachtet, obwohl in der Realität Beugungsphänomene an jeder Struktur eines Objektes auftreten. Passieren Lichtstrahlen einen Spalt, so entstehen dahinter kugelförmige Wellen, die sich in alle Richtungen ausbreiten. Dies kann man vereinfacht als zwei verschiedene Strahlensets betrachten. Ein Strahl ändert nach dem Durchgang durch den Spalt seine Richtung nicht (Strahl 0. Ordnung), die anderen werden alle um einen gewissen Winkel \(\beta\) abgelenkt. Tritt nun der Fall ein, dass \(\beta\) von einer solchen Größe ist, dass der Gangunterschied von einem Strahl, der von einem Ende des Spalts ausgeht, im Vergleich zu dem Strahl, der von der anderen Seite des Spalts ausgeht, \(\Delta=n\lambda\) beträgt, so existiert zu jedem Lichtstrahl exakt ein interferenzfähiger Partner, der eine Phasenverschiebung von \(\frac{\lambda}{2}\) besitzt. Die beiden Partner interferieren also destruktiv und löschen sich somit vollständig aus. Nun gibt es auch \(beta\) bei denen der Gangunterschied genau \(\Delta=(n+0,5)\lambda\) beträgt. In einem solchen Fall interferieren die Strahlenpartner konstruktiv miteinander, werden also verstärkt. Somit ergibt sich das Interferenzmuster für die verschiedenen \(\beta\). In der Realität handelt es sich natürlich um Kugelwellen und keine Strahlen, die Erklärung durch die Strahlen ist jedoch an dieser stelle ausreichend.\\
+			\\
+			Die Strahlen 0. Ordnung werden gemäß der bekannten Weise der geometrischen Optik gebrochen, übertragen jedoch keine Informationen über die sogenannte "Textur" des abzubildenden Objekts. Nutzt man eine sehr enge Blende so, dass nur die Strahlen 0. Ordnung passieren können, so kann man das Objekt in der Abbildung nicht erkennen. Ein erkennbares Abbild ensteht erst durch die Überlagerung der Strahlen 0. Ordnung mit dem Interferenzmuster (primäres Bild). Das Bild wird genauer und schärfer, je mehr Strahlen höherer Ordnung 
+			(größeren \(\beta\)) abgebildet werden, daher hängt die Linsengröße direkt mit der Qualität des Bildes zusammen.
+			
+			
+\end{document}
