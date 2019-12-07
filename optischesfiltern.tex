@@ -21,7 +21,27 @@
 	\newpage
 	
 	\section{Einleitung zum Versuch}
-	(Platzhalter)
+Ziel des Versuchs ``Optisches Filtern'' ist es, die Grundzüge der Abbeschen Abbildungstheorie näher zu bringen. Theoretische Grundlage liefern dabei die Konzepte der Geometrischen Optik, die Abbildungseigenschaften von Linsen und insbesondere die Bildkonstruktion durch Strahlenoptik, welche aus dem Versuch ``Optische Geräte'' bekannt sind, sowie die Kenntnisse zur Beugung und Interferenz sowie Kohärenz von Licht. Voraussetzung für den Vorgang des optischen Filterns ist Planung eines realisierbaren, geeigneten Aufbaus von Lichtquelle und Linsen. Durch gezielte Eingriffe in der optischen Aufbau soll der Beugung des Lichts für die Theorie der optischen Abbildung sowie für den Bau von optischen Instrumenten anschaulich vermittelt werden, um die dabei auftretenden Auflösungsgrenzen zu verstehen.\\
+	Die geometrische Optik vermittelt kein Konzept, die Leistungsfähigkeit optischer Systeme abzuschätzen. Tatsächlich glaubten auch die Mikroskophersteller bis zu den Arbeiten von Abbe in der Mitte des 19. Jahrhunderts, dass die einzige Begrenzung des räumlichen Auflösungsvermögens durch die technischen Fähigkeiten der Linsenhersteller gegeben war. Auf Basis der Wellenoptik wissen wir heute aber, dass die grundlegende Längenskala für die Auflösungsgrenze optischer Systeme die Wellenlänge des verwendeten Lichts ist. (Die Vorhersagen der geometrischen Optik und der Wellenoptik sind äquivalent zu den Aussagen der klassischen Physik und der Quantenmechanik. Während in der klassischen Physik prinzipiell keinerlei Grenzen für die Messgenauigkeit existieren, hat man in der Quantenmechanik aufgrund der Heisenberg'schen Unschärferelation eine Grenze vorgegeben.)\\
+	Mithilfe der folgenden Vorbereitungsfragen und -aufgaben soll der Versuchsaufbau geplant werden. Ziel ist es, diesen Aufbau während des Praktikums anhand dieser Planung aufzubauen und zu justieren. Dazu stehen folgende Komponenten zur Verfügung:\\
+  	\begin{itemize}  
+  		\item Optische Bank
+  		\item Stativ
+  		\item HeNe-Laser
+  		\item bikonvexe Linsen, jeweils eine Linse der Brennweite:
+  			\begin{itemize}
+  				\item $f = \SI{5}{mm}$
+  				\item $f = \SI{50}{mm}$
+  				\item $f = \SI{100}{mm}$
+  				\item $f = \SI{200}{mm}$
+  			\end{itemize}
+  		\item Optische Liniengitter
+  		\item Optische Kreuzgitter
+  		\item diverse Blenden (verstellbarer Spalt, Irisblenden)
+  		\item 1 Strahlenteiler
+  		\item Oberflächenspiegel
+  		\item Beobachtungsschirm
+  	\end{itemize}
 	
 	\section{Fragen zur Vorbereitung und Durchführung}
 		
@@ -91,5 +111,59 @@
 			Die Strahlen 0. Ordnung werden gemäß der bekannten Weise der geometrischen Optik gebrochen, übertragen jedoch keine Informationen über die sogenannte "Textur" des abzubildenden Objekts. Nutzt man eine sehr enge Blende so, dass nur die Strahlen 0. Ordnung passieren können, so kann man das Objekt in der Abbildung nicht erkennen. Ein erkennbares Abbild ensteht erst durch die Überlagerung der Strahlen 0. Ordnung mit dem Interferenzmuster (primäres Bild). Das Bild wird genauer und schärfer, je mehr Strahlen höherer Ordnung 
 			(größeren \(\beta\)) abgebildet werden, daher hängt die Linsengröße direkt mit der Qualität des Bildes zusammen.
 			
+			\subsection{Frage 5}
+		Das abzubildende Objekt sei nun ein Liniengitter. Das Gitter wird mit kohärentem Licht beleuchtet. Die Gitterspalte stehen dabei senkrecht auf der Zeichenebene. Konstruiere primäres sowie sekundäres Bild und skizziere den Intensitätsverlauf (qualitativ) in den entsprechenden Ebenen. Berücksichtige bei der Konstruktion die Beugungsmaxima 0. Sowie 1. Ordnung.
+		\\
+		\\
+		Bild
+		\\
+		\\
+	\subsection{Frage 6}
+		Berechne den Abstand $\Delta x$ benachbarter Punkte in der hinteren Brennebene von\\Aufgabe Nr. 5.
+		\\
+		\\
+		Die Lage der Beugungsmaxima eines Gitters ist gegeben durch:
+			\[\sin(\Psi_{m,max}) = \frac{\lambda}{d} \cdot m\]
+		\begin{tabular}{ll}
+			$m$ & Beugungsordnung\\
+			$\sin(\Psi_{m,max})$ & Beugungswinkel des $m$-ten Beugungsmaximums\\
+			$\lambda$ & Wellenlänge des beleuchtenden Lichtes\\
+			$d$ & Abstand der Gitterlinien
+		\end{tabular}
+		\\
+		\\
+		Für $m = 1$ gilt: $\sin(\Psi_{1,max}) = \frac{\lambda}{d} \approx \tan(\Psi_{1,max}) = \frac{\Delta x}{f}$ (Kleinwinkelnäherung).\\
+		Mithilfe dieser Näherung folgt:
+			\[\Delta x \approx \frac{\lambda}{d} \cdot f\]
+		An diesen Punkten interferieren die Lichtstrahlen konstruktiv. Es entstehen dort Intensitätsmaxima.
+
+	\subsection{Frage 7}
+		Um die Auswirkungen von Eingriffen am primären Bild auf das Endbild beobachten zu können, ist es hilfreich, das Endbild (sekundäres Bild) mit dem primären Bild zu vergleichen. Dies geschieht am bequemsten, wenn beide Bilder vergrößert nebeneinander auf dem Beobachtungsschirm dargestellt werden. Die Problemstellung besteht darin, zwei Bilder, die sich an unterschiedlichen Positionen im Strahlengang befinden, in einer Beobachtungsebene (Beobachtungsschirm) abzubilden.\\
+		Dies kann mit untenstehendem Aufbau (nicht maßstabsgetreu, alle Maße in mm) erreicht werden. Beschrifte den Aufbau vollständig und berechne die Brennweiten $f_1, f_2, f_4, f_5$ sowie die Abstände $a_1, a_2, a_3$ und $a_4 + a_5$. Berücksichtige bei der Wahl der Linsen die Liste der zur Verfügung stehenden Komponenten.
+		\\
+		\\
+		Strahlenaufweitung (siehe Aufgabe 3): $f_1 = \SI{5}{mm}$ und $f_2 = \SI{50}{mm}$\\
+		Daraus folgt: $a_1 = f_1 + f_2 = \SI{55}{mm}$\\
+		Mit $f_3 = \SI{200}{mm}$ folgt $a_2 = f_3 = \SI{200}{mm}$
+		Mit der Linsenformel ergibt sich:
+			\[\frac{1}{f_4} = \frac{1}{\SI{200}{mm}} = \frac{1}{\SI{450}{mm}} + \frac{1}{a_3 + \SI{140}{mm}} \Rightarrow a_3 = \SI{220}{mm}\]
+			\[\frac{1}{f_5} = \frac{1}{\SI{100}{mm}} = \frac{1}{\SI{110}{mm}} + \frac{1}{a_4 + a_5} \Rightarrow a_4 + a_5 = \SI{1100}{mm}\]
+		\\
+		Bild
+		\\
+	
+	\subsection{Frage 8}
+		Beschreiben Sie den Charakter der Bilder an den Orten P und Q am Leuchtschirm!
+		\\
+		\\
+		\textbf{Punkt P.} Hier ist das primäre Bild sichtbar. Das Interferenzabbild wird scharf auf den Beobachtungsschirm abgebildet.\\
+		\textbf{Punkt Q.} Hier ist das sekundäre Bild, also der Treffpunkt der Strahlen nullter Ordnung mit Strahlen höherer Ordnungen, sichtbar.
+	\subsection{Frage 9}
+		Überlegen Sie sich, wie Sie eine „optische Bank“ (also einen Aufbau mit mehreren optischen Komponenten wie z.B. Linsen) justieren sollten. Verdeutlichen Sie sich die Bedeutung einer optimalen Ausrichtung der optischen Komponenten auf der optischen Achse anhand (Abb. of.5). Setzen Sie den Strahlengang des parallel versetzt einfallenden Stahlbündels fort.Was beobachten Sie ?
+		\\
+		\\
+		Lichstrahlen werden in einer Linse gebrochen und aufgeweitet. Werden die Linsenmitten nicht präzise auf der optischen Achse positioniert, trifft der Strahl mit einem entsprechend noch größeren Versatz zur Linsenachse auf die nächste Linse. Die Maxima der ersten Ordnung tragen somit nach einer Beugung am Gitter nicht mehr zum Bild bei, da die Apertur und damit der Durchmesser der nächsten Linse nach dem Gitter zu gering ist und gerade noch das Beugungsmaximum nullter Ordunng vom einfallenden Strahlenbündel erfassen kann. Die Intensität des Bildes am Schirm schließlich nimmt ab, im schlimmsten Fall ist es überhaupt nicht mehr zu sehen.
+		\\
+		Bild
 			
 \end{document}
