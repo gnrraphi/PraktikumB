@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{esvect}
 \usepackage{amssymb}
+\usepackage{siunitx}
 
 
 
@@ -21,7 +22,7 @@
 	\newpage
 	
 	\section{Einleitung zum Versuch}
-Ziel des Versuchs ``Optisches Filtern'' ist es, die Grundzüge der Abbeschen Abbildungstheorie näher zu bringen. Theoretische Grundlage liefern dabei die Konzepte der Geometrischen Optik, die Abbildungseigenschaften von Linsen und insbesondere die Bildkonstruktion durch Strahlenoptik, welche aus dem Versuch ``Optische Geräte'' bekannt sind, sowie die Kenntnisse zur Beugung und Interferenz sowie Kohärenz von Licht. Voraussetzung für den Vorgang des optischen Filterns ist Planung eines realisierbaren, geeigneten Aufbaus von Lichtquelle und Linsen. Durch gezielte Eingriffe in der optischen Aufbau soll der Beugung des Lichts für die Theorie der optischen Abbildung sowie für den Bau von optischen Instrumenten anschaulich vermittelt werden, um die dabei auftretenden Auflösungsgrenzen zu verstehen.\\
+Ziel des Versuchs ``Optisches Filtern'' ist es, die Grundzüge der Abbeschen Abbildungstheorie näher zu bringen. Theoretische Grundlage liefern dabei die Konzepte der Geometrischen Optik, die Abbildungseigenschaften von Linsen und insbesondere die Bildkonstruktion durch Strahlenoptik, welche aus dem Versuch ``Optische Geräte'' bekannt sind, sowie die Kenntnisse zur Beugung und Interferenz sowie Kohärenz von Licht. Voraussetzung für den Vorgang des optischen Filterns ist Planung eines realisierbaren, geeigneten Aufbaus von Lichtquelle und Linsen. Durch gezielte Eingriffe in den optischen Aufbau soll der Beugung des Lichts für die Theorie der optischen Abbildung sowie für den Bau von optischen Instrumenten anschaulich vermittelt werden, um die dabei auftretenden Auflösungsgrenzen zu verstehen.\\
 	Die geometrische Optik vermittelt kein Konzept, die Leistungsfähigkeit optischer Systeme abzuschätzen. Tatsächlich glaubten auch die Mikroskophersteller bis zu den Arbeiten von Abbe in der Mitte des 19. Jahrhunderts, dass die einzige Begrenzung des räumlichen Auflösungsvermögens durch die technischen Fähigkeiten der Linsenhersteller gegeben war. Auf Basis der Wellenoptik wissen wir heute aber, dass die grundlegende Längenskala für die Auflösungsgrenze optischer Systeme die Wellenlänge des verwendeten Lichts ist. (Die Vorhersagen der geometrischen Optik und der Wellenoptik sind äquivalent zu den Aussagen der klassischen Physik und der Quantenmechanik. Während in der klassischen Physik prinzipiell keinerlei Grenzen für die Messgenauigkeit existieren, hat man in der Quantenmechanik aufgrund der Heisenberg'schen Unschärferelation eine Grenze vorgegeben.)\\
 	Mithilfe der folgenden Vorbereitungsfragen und -aufgaben soll der Versuchsaufbau geplant werden. Ziel ist es, diesen Aufbau während des Praktikums anhand dieser Planung aufzubauen und zu justieren. Dazu stehen folgende Komponenten zur Verfügung:\\
   	\begin{itemize}  
@@ -45,7 +46,7 @@ Ziel des Versuchs ``Optisches Filtern'' ist es, die Grundzüge der Abbeschen Abb
 	
 	\section{Fragen zur Vorbereitung und Durchführung}
 		
-		\subsection{Aufgabe 1}
+		\subsection{Frage 1}
 			Wie lautet die Abbildungsgleichung für Linsen und was bedeuten die einzelnen Größen?\\
 			\\
 			Die Abbildungsgleichung für Linsen lautet 
@@ -66,17 +67,24 @@ Ziel des Versuchs ``Optisches Filtern'' ist es, die Grundzüge der Abbeschen Abb
 			\frac{y'}{y}=\frac{b}{g}
 			\end{align*}
 			
-		\subsection{Aufgabe 2}
+		\subsection{Frage 2}
 			Graphische Darstellung der Größen der Abbildungsgleichung und Konstruktion des Gegenstands \(G\). Vergleich der konstruierten Werte für Bildgröße und Bildweite mit den berechneten.\\
 			\\
 			(Skizze hier einfügen)\\
 			\\
+			In Skizze abgemessene Werte:\\
+			\(f=\SI{30}{mm}, g=\SI{70}{mm}, b=\SI{52}{mm},y=\SI{20}{mm},y'=\SI{15}{mm}\) \\
+			Umstellen der Abbildungsgleichung aus Aufgabe 1:
+			\begin{align*}
+			b=\frac{1}{\frac{1}{f}-\frac{1}{g}}=\SI{52,5}{mm}
+			\end{align*}
+			\begin{align*}
+			y'=y\frac{b}{g}=\SI{30}{mm}\frac{\SI{52,5}{mm}}{\SI{70}{mm}}=\SI{15}{mm}
+			\end{align*}
+			Die berechneten Werte stimmen also sehr gut mit den gemessenen Werten überein.
 			
-		\subsection{Aufgabe 3}
+		\subsection{Frage 3}
 			Im Versuch benutzt man einen Laserstrahl, dessen enges Ausgangsstrahlbündel näherungsweise zu einem breiteren Parallelstrahl aufgeweitet wird.\\
-			\\
-			(Skizze einfügen)\\
-			\\
 			Dafür sollen zwei Linsen \(L_{1}\) und \(L_{2}\) verwendet werden. Dabei gilt für die Brennweite von \(L_{1}\) \(f_{1}=5mm\), wobei die  Aufweitung 10-fach sein soll. Für die Linse \(L_{2}\) stehen Linsen mit einer Brennweite von \(50mm\),\(100mm\) oder \(200mm\) zur Verfügung. Welche davon sollte man wählen? Wie groß müssen die Linsendurchmesser mindestens sein?\\
 			\\
 			Eine Aufweitung kann mit verschiedenen Linsensystemen erreicht werden, beispielsweise mit umgekehrten Teleskop-Aufbauten. Eine Möglichkeit wäre eine umgekehrte Kepler-Anordnung, diese besteht aus zwei bikonvexen Linsen mit einem gemeinsamen Brennpunkt. Dieser Aufbau kann für die Aufweitung eines Hochleistungs-Lasers jedoch nachteilig sein, da es in diesem gemeinsamen Brennpunkt zu einer sehr hohen Leistungsdichte kommen kann, die zur Funkenentladung der aufgeheizten Luft führen kann. Besser ist es daher, eine umgekehrte Galilei-Anordnung zu verwenden. Diese besteht aus einer bikonvexen und einer bikonkaven Linse. Zwar gibt es auch hier einen gemeinsamen Brennpunkt, dieser ist jedoch nicht reell. 
@@ -96,9 +104,9 @@ Ziel des Versuchs ``Optisches Filtern'' ist es, die Grundzüge der Abbeschen Abb
 			\begin{align*}
 			r=1,22\frac{\lambda f}{d}
 			\end{align*}
-			wobei \(\lambda\) die Wellenlänge des einfallenden Lichtes, \(f\) die Brennweite der Linse und \(d\) der Durchmesser der Linse ist. Damit das Beugungsscheibchen möglichst klein bleibt, muss also der Durchmesser von \(L_{1}\) groß sein im Vergleich zum Durchmesser des Laserstrahls sein. Der Durchmesser von \(L_{2}\) muss dann für die gewünschte Vergrößerung 10-mal so groß sein, wie der von \(L_{1}\).
+			wobei \(\lambda\) die Wellenlänge des einfallenden Lichtes, \(f\) die Brennweite der Linse und \(d\) der Durchmesser der Linse ist. Damit das Beugungsscheibchen möglichst klein bleibt, muss also der Durchmesser von \(L_{1}\) groß sein im Vergleich zum Durchmesser des Laserstrahls sein. Seine mindeste Größe muss der Breite des Strahls entsprechen. Der Durchmesser von \(L_{2}\) muss dann für die gewünschte Vergrößerung 10-mal so groß sein, wie der von \(L_{1}\).
 			
-		\subsection{Aufgabe 4}
+		\subsection{Frage 4}
 			Erläutern Sie die Begriffe „Primäres Bild“ und „Sekundäres Bild“ der Abbeschen Abbildungstheorie.
 			Wo liegen diese Bilder? Wie kann man das primäre Bild mathematisch beschreiben?\\
 			\\
