@@ -1,0 +1,393 @@
+\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+
+\title{Praktikum B Vorbereitung zu Versuch "po"}
+\author{Leon Machtl und Raphael Lehner}
+\date{19.12.2019}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{Einleitung zum Versuch}
+		Dieser Versuch beschäftigt sich mit der Polarisation von Licht. So sollen unter anderem seine Erzeugung, sein Nachweis, sowie wichtige Eigenschaften kennen gelernt werden. Polarisiertes Licht ist eine polarisierte Welle. Dieser Begriff bezeichnet eine elektromagnetische Welle, deren Feldvektor \(\vec{E}\) eine wohldefinierte Richtung gegenüber dem Wellenvektor \(\vec{k}\) besitzt. Der Wellenvektor gibt die Ausbreitungsrichtung der Welle an. \(\vec{B}\) steht senkrecht auf \(\vec{E}\) und beide stehen senkrecht auf dem Wellenvektor. Es handelt sich bei elektromagnetischen Wellen also um Transversalwellen Das menschliche Auge kann den Polarisationszustand von Licht nicht wahrnehmen. Im Rahmen dieses Versuches sollen die Überlegungen, die auf die Formulierung des Ladungsquantums führten, nachvollzogen werden, die Bewegung von geladenen Teilchen in homogenen Feldern formuliert werden, das Zusammenwirken von elektrischen und mechanischen Kräften mit Hilfe eines Vergleichs der Größenordnungen dargestellt werden, die Begriffe der Hydrodynamik kennengelernt werden und anhand eines Experiments gezeigt werden, wie früher Naturkonstanten ermittelt werden konnten. Außerdem soll klar werden, wo die Messfehlergrenzen in dem vereinfachten Aufbau des Versuchs, der durchgeführt wird, liegen und was man für eine Präzisionsmessung am Aufbau verbessern müsste.\\
+		\\
+		Im Folgenden werden für den Versuch relevante Beziehungen aufgeführt, sowie Begriffe erklärt.
+		
+		\subsection{Maxwell- und Wellengleichungen}
+			Alle Eigenschaften von elektromagnetischen Wellen lassen sich aus den Maxwellgleichungen herleiten. Nimmt man Materialien an, die frei von Ladungen und Stromfluss sind, so lauten diese:
+			
+			\begin{align}
+			\vec{\nabla}\cdot\vec{E}=0
+			\end{align}
+			\begin{align}
+			\vec{\nabla}\cdot\vec{B}=0
+			\end{align}
+			\begin{align}
+			\vec{\nabla}\times\vec{B}=\epsilon_{0}\epsilon_{r}\frac{\partial\vec{E}}{\partial t}
+			\end{align}
+			\begin{align}
+			\vec{\nabla}\times\vec{E}=-\mu_{0}\frac{\partial\vec{B}}{\partial t}
+			\end{align}
+			
+			Aus diesen Gleichungen folgen die Wellengleichungen für elektromagnetische Wellen:
+			
+			\begin{align}
+			\Delta\vec{E}-\mu_{0}\epsilon_{0}\epsilon_{r}\frac{\partial^{2}\vec{E}}{\partial t^{2}}=0 
+			\end{align}
+			\begin{align}
+			\Delta\vec{B}-\mu_{0}\epsilon_{0}\epsilon_{r}\frac{\partial^{2}\vec{B}}{\partial t^{2}}=0
+			\end{align}
+			
+			\newpage
+			
+			Als Lösungen der beiden Wellengleichungen ergeben sich dann ebene wellen und somit gilt für \(\vec{E}\) und \(\vec{B}\) unter der Annahme, dass sich die Welle in \(z\)-Richtung ausbreitet:
+			
+			\begin{align}
+			\vec{E}(z,t)=\vec{E}_{0}cos(\omega t-kz+\phi_{0})
+			\end{align}
+			\begin{align}
+			\vec{B}(z,t)=\vec{B}_{0}cos(\omega t-kz+\phi_{0})
+			\end{align}
+			
+		\subsection{Polarisationszustände des Lichts}
+			\begin{itemize}
+				\item linear polarisiertes Licht\\
+				Unter linear polarisiertem Licht versteht man Licht, bei dem die Schwingungsebene raumfest ist, also die Phasendifferenz zwischen den beiden Komponenten \(0\) oder \(\pi\) beträgt. Eine Überlagerung zweier linear polarisierter Wellen, die senkrecht zueinander stehen und deren Phasendifferenz \(n\pi\) mit \(n\) ganze Zahl. Man kann jede mögliche Welle durch Superposition zweier beliebiger Wellen unterschiedlicher Phase, welche linear polarisiert sind, beschreiben.
+				\item zirkular polarisiertes Licht\\
+				Unter zirkular polarisiertem Licht versteht man Licht, bei dem beide Komponenten über die gleiche Amplitude verfügen und eine Phasendifferenz von\(\pm \frac{\pi}{2}\) besitzen. Die beiden Komponenten überlagern sich dann so, dass sich eine Schraubenbewegung mit konstanter Amplitude ergibt.
+				\item elliptisch polarisiertes Licht\\
+				Die beiden oben behandelten Fälle sind Spezialfälle von elliptisch polarisiertem Licht, bei dem \(\vec{E}\) sowohl eine Rotation durchführt, als auch seine Amplitude ändert.
+			\end{itemize}
+			
+		\subsection{Gesetz von Malus}
+			Aus unpolarisiertem Licht kann man auf verschiedene Arten polarisiertes Licht herstellen, zum Beispiel durch richtungsselektive Absorption, Reflexion, Streuung, Doppelbrechung und optische Aktivität. Bei einem solchen Vorgang geht Intensität verloren. Dieses Intensitätsverlust wird durch das Gesetz von Malus beschrieben:
+			
+			\begin{align}
+			I(\Theta)=I_{0}cos^{2}\Theta
+			\end{align}
+			
+			\(\Theta\) bezeichnet den Winkel zwischen Der Durchlasspolarisationsrichtung des Polarisators und der Polarisationsebene des einfallenden Lichts. Für unpolarisiertes Licht gilt:
+			
+			\begin{align}
+			\frac{I(\Theta)}{I_{0}}=\frac{1}{2\pi}\int_{0}^{2\pi}cos^{2}(\Theta)d\Theta=\frac{1}{2}
+			\end{align}
+			
+			Die Intensität von unpolarisertem Licht wird also halbiert.
+			
+		\subsection{\(\frac{\lambda}{4}\) - und \(\frac{\lambda}{2}\) - Plättchen}
+			Beide Plättchen Arten beruhen auf dem Prinzip der Doppelbrechung. Die Verzögerungsplatten haben eine Phasendifferenz bei einer einfallenden Welle zur Folge, welcher durch die unterschiedlichen Laufzeiten der aufgespaltenen Strahlen entsteht. Erzeugt man eine Schlagfigur in einer Platte, so geben die beiden langen Arme die \(\beta\)-Richtung an und die dazu senkrechte Richtung wird \(\gamma\)-Richtung genannt. Die beiden Strahlen, die bei der Doppelbrechung entstehen, schwingen dann paralel zu diesen beiden Richtungen (je einer). Nach dem Durchqueren des Plättchens beträgt dann der Gangunterschied:
+			
+			\begin{align}
+			\Delta=d(n_{\gamma}-n_{\beta})
+			\end{align}
+			
+			den Gangunterschied kann man beliebig einstellen, indem man die Dicke \(d\) variiert.
+			
+		\subsection{Optische Aktivität}
+			Unter optischer Aktivität versteht man die Eigenschaft von Medien, die Ebene von linear polarisiertem Licht um einen Winkel \(\alpha\) zu drehen. Damit kann man unter anderem die Konzentration von Stoffen bestimmen. Es gilt:
+			
+			\begin{align}
+			\alpha=[\alpha]cd
+			\end{align} 
+			
+			wobei \(c\) die Konzentration, \(d\) die Schichtdecke und \([\alpha]\) die spezifische Drehung bezeichnen.
+			
+			\newpage
+			
+	\section{Fragen und Aufgaben zur Vorbereitung}
+		\subsection{Frage 1}
+			Unter welchen Voraussetzungen sind die Maxwellschen Gleichungen (1) bis (4) gültig?\\
+			\\
+			Damit die Gleichungen (1) bis (4) gültig sind, muss gelten:
+			
+			\begin{itemize}
+				\item Ladungsdichte \(\rho=0\)
+				\item Stromluss nicht vorhanden \(I=0\)
+				\item Dielektrikum homogen verteilt und isotrop
+				\item Absorption vernachlässigbar
+			\end{itemize}
+			
+		\subsection{Frage 2}
+			Unter welchen Bedingungen sind ebene Wellen Lösungen der Maxwellschen Gleichungen?
+			(Randbedingungen angeben)\\
+			\\
+			Folgende Bedingungen müssen gelten:
+		
+			\begin{itemize}
+				\item Betrachtung in nicht-magnetischem Dielektrikum
+				\item Amplituden Maxima von \(\vec{E}\) und \(\vec{B}\) konstant
+				\item Ausbreitung parallel zu \(\vec{k}\)
+				\item Dispersionrelation \(k=\frac{\omega}{c}\) gilt
+				\item Ausbreitungsgeschwindigkeit ist gleich Gruppengeschwindigkeit, also\\
+				\begin{align*}
+				v_{g}=c=\frac{1}{\sqrt{\epsilon_{0}\epsilon_{r}\mu_{0}\mu_{r}}}
+				\end{align*}
+			\end{itemize}
+		
+		\subsection{Frage 3}
+			Zeigen Sie, das elektromagnetische Wellen Transversalwellen sind.\\
+			\\
+			\begin{align*}
+			\vec{E}(\vec{r},t)=\vec{E}_{0}cos(\vec{k}\cdot\vec{r}-\omega t)
+			\end{align*}
+			\begin{align*}
+			\vec{B}(\vec{r},t)=\vec{B}_{0}cos(\vec{k}\cdot\vec{r}-\omega t)
+			\end{align*}
+			
+			\newpage
+			
+			Dann gilt nach Frage 1:
+			
+			\begin{align*}
+			\vec{\nabla}\cdot\vec{E}=0
+			\end{align*}
+			
+			wendet man dies auf die obigen Gleichungen an, erhält man:
+			
+			\begin{align*}
+			\vec{\nabla}\cdot\vec{E}=-\vec{E}_{0}\cdot\vec{k}sin(\vec{k}\cdot\vec{r}-\omega t)=0
+			\end{align*}
+			
+			Das ist nur für alle \(t\) erfüllt, falls gilt:
+			
+			\begin{align*}
+			\vec{E}_{0}\cdot\vec{k}=0 
+			\end{align*}
+			
+			und daraus folgt
+			
+			\begin{align*}
+			\vec{E} \perp \vec{k}
+			\end{align*}
+			
+			Analog folgt
+			
+			\begin{align*}
+			\vec{B}\perp\vec{k}
+			\end{align*}
+			
+			Also schwingen das \(\vec{E}\)- und \(\vec{B}\)-Feld senkrecht zur Ausbreitungsrichtung und damit ist gezeigt, dass elektromagnetische Wellen Transversalwellen sind.
+			
+		\subsection{Frage 4}
+			Warum ist das natürliche Licht unpolarisiert?\\
+			\\
+			Ein einzelnes Photon besitzt einen Spin von \(\pm \hbar\) und ist damit zirkular polarisiert. Aber bei natürlichen Prozessen wird eine große Menge von Phototonen emittiert. Diese besitzen untereinander keine feste Polarisations- oder Phasenbeziehung zueinander, weshalb die Summe der emittierten Photonen keine ausgezeichnete Schwingungsebene mehr besitzt. Die Photonen verteilen sich also statistisch über alle möglichen Zustände - das Licht ist unpolarisiert.
+			
+		\subsection{Frage 5}
+			Nennen Sie die möglichen Polarisationszustände von Licht.Wie kann man diese mathematisch
+			darstellen?\\
+			\\
+			Für das \(\vec{E}\)-Feld und analog für das \(\vec{B}\)-Feld gilt:
+			\begin{align*}
+			\vec{E}(\vec{r},t)=\vec{E}_{x0}cos(\vec{k}\cdot\vec{r}-\omega t)+\vec{E}_{y0}cos(\vec{k}\cdot\vec{r}-\omega t+\phi)
+			\end{align*}
+			
+			\newpage
+			
+			Nun gilt:
+			
+			\begin{itemize}
+				\item linear polarisiertes Licht:\\
+				\(\phi=n\pi\)
+				\item zirkular polarisiertes Licht:\\
+				\(E_{x0}=E_{y0}\) und \(\phi=(n+\frac{1}{2})\pi\)
+				\item elliptisch polarisiertes Licht:\\
+				Für alle anderen Parameter heißt das Licht elliptisch polarisiert.
+			\end{itemize}
+		
+		\subsection{Frage 6}
+			Wie kann man einen Linearpolarisator von einer Verzögerungsplatte unterscheiden?\\
+			\\
+			Man vergleicht die Eigenschaften der beiden:\\
+			\\
+			Linearpolarisator:
+			
+			\begin{itemize}
+				\item Vermindert die Intensität, außer die Welle schwingt parallel zur Polarisationsebene
+				\item Änderung der Schwingungsebene durch Absorption der senkrecht zur Polarisationsebene stehenden Komponente
+			\end{itemize}
+		
+			Verzögerungsplättchen:
+			
+			\begin{itemize}
+				\item Keine Änderung der Intensität
+				\item Änderung der Polarisation durch Phasenverschiebung einer Komponente gegenüber der anderen
+			\end{itemize}
+		
+		\subsection{Frage 7}
+			Welche Eigenschaften haben Linearpolarisator, \(\frac{\lambda}{2}\)- und \(\frac{\lambda}{4}\)-Plättchen? Erklären sie, welche
+			Polarisationszustände man aus lin. pol. Licht mit einem \(\frac{\lambda}{2}\)- bzw. \(\frac{\lambda}{4}\)-Plättchen erzeugen kann.
+			Welchen Einfluss hat dabei die optische Achse (Vorzugsrichtung) des Plättchens?\\
+			\\
+			Linearpolarisator:
+			\begin{itemize}
+				\item Absorbiert Komponente, die senkrecht zur Polarisationsebene schwingt
+				\item Reduktion der Lichintensität
+			\end{itemize}
+			
+			\(\frac{\lambda}{2}\)-Plättchen:
+			\begin{itemize}
+				\item Verzögerungsplättchen mit bestimmter Dicke d
+				\item Anisotropes Material mit zwei Brechungsindizes (einer parallel und einer senkrecht zur optischen Achse,\(n_{\beta}\parallel\) und \(n_{\gamma}\perp\) mit \(n_{\gamma}>n_{\beta}\))
+				\item Verzögerung der Feldkomponente, die parallel zur optischen Achse schwingt um \(\frac{\lambda}{2}\) gegenüber der dazu senkrecht schwingenden Komponente
+				\item Drehung der Schwingungsebene der gesamten Welle
+			\end{itemize}
+		
+			\(\frac{\lambda}{4}\)-Plättchen:
+			\begin{itemize}
+				\item Analog zu \(\frac{\lambda}{2}\)-Plättchen, aber Verzögerung um \(\frac{\lambda}{4}\)
+				\item Aus linear polarisierter Welle wird zirkular polarisierte und umgekehrt
+			\end{itemize}
+		
+			Die optische Achse "entscheidet" also welche der beiden Komponenten verzögert wird.
+			
+		\subsection{Frage 8}
+			Wie dick muss ein \(\frac{\lambda}{2}\)- oder \(\frac{\lambda}{4}\)-Plättchen aus Glimmer sein, wenn die Wellenlänge des einfallenden
+			Lichtes 589nm ist?\\
+			\\
+			\(\lambda=\SI{580}{nm}\), somit gilt:\\
+			\(n_{\beta}=1,5944\) und \(n_{\gamma}=1,5993\)\\
+			Dann folgt mit Gleichung (11):
+			\begin{align*}
+			\Delta=d(n_{\gamma}-n_{\beta})
+			\end{align*}
+			\begin{align*}
+			d=\frac{\Delta}{n_{\gamma}-n_{\beta}}
+			\end{align*}
+			Somit folgt für \(\Delta=\frac{\lambda}{2}\):
+			\begin{align*}
+			d=\frac{\frac{\SI{589}{nm}}{2}}{1,5993-1,5944}=6,010\cdot 10^{-5} m
+			\end{align*}
+			und für \(\Delta=\frac{\lambda}{4}\):
+			\begin{align*}
+			d=\frac{\frac{\SI{589}{nm}}{4}}{1,5993-1,5944}=3,005\cdot 10^{-5} m
+			\end{align*}
+			
+		\subsection{Frage 9}
+			Wann nennt man optische Medien isotrop bzw. anisotrop? Geben sie jeweils zwei Beispiele an.\\
+			\\
+			Optisch isotrop:
+			\begin{itemize}
+				\item Richtungsunabhängiger Brechungsindex
+				\item Beispiele: Glas, Wasser
+			\end{itemize}
+		    
+		    Optisch anisotrop:
+		    \begin{itemize}
+		    	\item Richtungsabhängiger Brechungsindex
+		    	\item Atome in Kristall besitzen bevorzugte Schwingungsrichtung (optische Achse)
+		    	\item Doppelbrechung
+		    	\item Beispiele: Quartz, Kalkspat
+		    \end{itemize}
+	    
+	    \subsection{Frage 10}
+	    	Auf ein \(\frac{\lambda}{4}\)- Plättchen aus Quarz fällt Licht einer Natriumlampe (\(\lambda=\SI{589}{nm}\)). Wie dick ist
+	    	die Quarzplatte? Welche Frequenz und Wellenlänge haben ordentlicher und außerordentlicher
+	    	Strahl innerhalb des Kristalls?\\
+	    	\\
+	    	\(\lambda=\SI{589}{nm}\)\\
+	    	Quartzplatte, somit gilt: \(n_{\gamma}=1,55338\) und \(n_{\beta}=1,54425\) und daraus folgt:
+	    	
+	    	\begin{align*}
+	    	d=\frac{\frac{\SI{589}{nm}}{4}}{1,55338-1,54425}=1,612\cdot 10^{-5}m=16,12\mu m
+	    	\end{align*}
+	    	
+	    	Die Frequenz der elektromagnetischen Welle ist bei Phasenübergängen konstant.
+	    	
+	    	\begin{align*}
+	    	f=\frac{c}{\lambda}=\frac{\SI{299792458}{m/s}}{\SI{589}{nm}}=5,1\cdot 10^{14}m
+	    	\end{align*}
+	    	
+	    	Berechnung der Wellenlänge:
+	    	
+	    	\begin{align*}
+	    	c_{medium}=\frac{c_{0}}{n_{medium}}=\frac{\lambda_{0}f}{n_{medium}}=\lambda_{medium}f
+	    	\end{align*}
+	    	
+	    	daraus folgt:
+	    	
+	    	\begin{align*}
+	    	\lambda_{medium}=\frac{\lambda_{0}}{n_{medium}}
+	    	\end{align*}
+	    	
+	    	setzt man nun nacheinander die beiden Brechungsindizes ein, so ergibt sich für \(n_{gamma}\)(ordentlicher Strahl) \(\lambda_{medium}=\SI{379}{nm}\) und für \(n_{\beta}\)(außerordentlicher Strahl) \(\lambda_{medium}=\SI{381}{nm}\)
+	    	
+	    \subsection{Frage 11}
+	    	Die Durchlassrichtung von zwei hintereinander stehenden, idealen Polarisatoren sind um den
+	    	Winkel \(\alpha_{1}=30^{\circ}\) gegeneinander verdreht. Auf die Anordnung fällt Licht, dessen Schwingungsrichtung
+	    	den Winkel \(\alpha_{2}=15^{\circ}\) zur Durchlassrichtung des ersten Polarisators bildet. Wie groß
+	    	ist der Transmissionsgrad dieser Anordnung?\\
+	    	\\
+	    	Nach Gesetz von Malus gilt:
+	    	
+	    	\begin{align*}
+	    	I_{1}=I_{0}cos^{2}(\alpha_{2})
+	    	\end{align*}
+	    	\begin{align*}
+	    	I_{2}=I_{1}cos^{2}(\alpha_{1})=I_{0}cos^{2}(\alpha_{2})cos^{2}(\alpha_{1})=0,7I_{0}
+	    	\end{align*}
+	    	
+	    	Also beträgt der Transmissionsgrad \(\SI{70}{\percent}\).
+	    	
+	    \subsection{Frage 12}
+	    	Was versteht man unter optischer Aktivität?\\
+	    	\\
+	    	Unter optischer Aktivität versteht man die Eigenschaft von Medien, die Ebene von linear polarisiertem Licht um einen Winkel \(\alpha\) zu drehen. Damit kann man unter anderem die Konzentration von Stoffen bestimmen. Es gilt:
+	    	
+	    	\begin{align*}
+	    	\alpha=[\alpha]cd
+	    	\end{align*} 
+	    	
+	    	wobei \(c\) die Konzentration, \(d\) die Schichtdecke und \([\alpha]\) die spezifische Drehung bezeichnen.\\ Die spezifische Drehung ist eine Materialkonstante. Bei der Drehung wird die Intensität des Lichtes nicht geändert, wenn man die Absorption durch die optisch aktive Substanz vernachlässigt. Man bezeichnet Stoffe je nach der Richtung in die sie die Schwingungsebene drehen als links- bzw. rechtsdrehend.
+	    	
+	    \subsection{Frage 13}
+	    	Beschreiben Sie den Strahlengang und die Funktionsweise des Nicol’schen
+	    	Prismas.\\
+	    	\\
+	    	Unpolarisiertes Licht wird beim Durchgang durch ein Nicolsches Prisma zerlegt in einen ordentlichen und einen außerordentlichen Strahl, die jeweils senkrecht zueinander polarisiert sind. Der außerordentliche Strahl erfährt eine "normale" Brechung an den Kanten des Nicolschen Prismas mit dem Brechungsindex \(n=n_{\beta}\). Die Geometrie des Prismas hat zur Folge, dass sich beim Austreten aus dem Prisma ein parallelverschobener Strahl ergibt. Der ordentliche Strahl jedoch wird beim Eintritt in das Medium mit Brechungsindex \(n=n_{\gamma}\) abgelenkt, wodurch er unter einem flacheren Winkel als der außerordentliche Strahl auf die zweite Phasengrenze trifft. Es kommt zur Totalreflexion, der ordentliche Strahl verlässt das Nicolsche Prisma also in einer anderen Richtung als der außerordentliche Strahl.\\
+	    	\\
+	    	(evtl. Skizze)\\
+	    	
+	    	
+	    \subsection{Frage 14}
+		    Was versteht man unter Spannungsdoppelbrechung?\\
+		    \\
+		    Unter Spannungsdoppelbrechung versteht man, dass isotrope Medien durch äußere mechanische Spannung temporär der Art verändert werden können, dass man eine Doppelbrechung beobachten kann.
+		    
+		\subsection{Frage 15}
+			Wie kann man Licht eines bestimmten Polarisationstyps erzeugen und nachweisen?\\
+			\\
+			Betrachte die drei Polarisationstypen:\\
+			\\
+			Linear polarisiertes Licht:
+			\begin{itemize}
+				\item Erzeugung durch linearen Polarisationsfilter oder Nicolsches Prisma
+				\item Nachweis durch Hintereinanderschaltung von zwei Linearpolarisatoren, die um \(90^{circ}\) zueinander verdreht wurden. Linearpolarisiertes Licht sollte vollständig absorbiert werden
+			\end{itemize}
+			
+			Zirkular polarisiertes Licht:
+			\begin{itemize}
+				\item Erzeugung aus linear polarisiertem Licht mit einem \(\frac{\lambda}{4}\)-Plättchen
+				\item Nachweis: Messe Lichintensität hinter linearem Polarisationsfilter und drehe diesen. Ändert sich die Intensität während der Drehung nicht, liegt zirkular polarisiertes Licht vor (oder unpolarisiertes, das wird jedoch durch die Art der Erzeugung ausgeschlossen)
+			\end{itemize}
+			
+			Elliptisch polarisiertes Licht:
+			\begin{itemize}
+				\item Erzeugung durch Überlagerung von zirkular polarisiertem mit linear polarisiertem Licht
+				\item Nachweis wie bei zirkular polarisiertem Licht. Bei elliptischer Polaristion sollte sich die Intensität während der Drehung ändern, aber nie 0 werden.
+			\end{itemize}
+			
+	
+\end{document}
