@@ -1,0 +1,155 @@
+\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+
+\title{Praktikum B Vorbereitung zu Versuch "wk"}
+\author{Leon Machtl und Raphael Lehner}
+\date{23.01.2020}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{Einleitung zum Versuch}
+		
+	\section{Fragen zur Vorbereitung}
+		\subsection{Frage 1}
+			Leiten Sie die Kontinuitätsgleichung mit laminarer Strömung durch eine geschlossene Röhre
+			her!\\
+			\\
+			Aufgrund der Massenerhaltung muss die Masse, die in die Röhre fließt gleich der Masse sein, die aus der Röhre wieder hinaus fließt. Die Gesamtmasse ändert sich also nicht.
+			\begin{align*}
+			\dot m=0
+			\end{align*}
+			Somit gilt für den eintretenden Massestrom \(\dot m_{1}\) und den ausstretenden Massestrom \(\dot m_{2}\)
+			\begin{align}
+			\dot m_{1}=\dot m_{2}
+			\end{align}
+			Die zeitliche Änderung der Masse wird beschrieben durch 
+			\begin{align*}
+			\dot m=\rho \dot V
+			\end{align*}
+			Wobei \(V\) das Volumen bezeichnet. Die zeitliche Änderung des Volumens, also der Volumenstrom ergibt sich seinerseits durch
+			\begin{align*}
+			\dot V=vA
+			\end{align*}
+			wobei \(v\) die mittlere Strömungsgeschwindigkeit und \(A\) die betreffende Querschnittsfläche bezeichnet. Somit folgt aus (1):
+			\begin{align*}
+			\rho_{1}v_{1}A_{1}=\rho_{2}v_{2}A_{2}
+			\end{align*}
+			und für ein inkompressibles Fluid mit \(\rho_{1}=\rho_{2}\)
+			\begin{align*}
+			v_{1}A_{1}=v_{2}A_{2}
+			\end{align*}
+			
+		\subsection{Frage 2}
+			Skizzieren Sie die Unterschiede zwischen einer laminaren und einer turbulenten Strömung.
+			Wann ist eine Strömung stationär?\\
+			\\
+			Laminare Strömung:
+			\begin{itemize}
+				\item Bewegung von Flüssigkeiten und Gasen
+				\item Fluid strömt in sich nicht vermischenden Schichten
+				\item bei Übergangsgebiet senkrecht zur Strömungsrichtung keine sichtbaren Turbulenzen zwischen unterschiedlichen Strömungsgeschwindigkeiten
+				\item Reynoldszahl kleiner als kritischer Wert \(Re_{krit}\)
+				\item Bahn eines Teilchens wird durch \glqq Stromfaden\grqq{} beschrieben
+			\end{itemize}
+			
+			Turbulente Strömung:
+			\begin{itemize}
+				\item Bewegung von Fluiden (Flüssigkeiten, Gase)
+				\item Verwirbelungen treten auf
+				\item Teilchen werden kontinuierlich durcheinander gemischt
+				\item Bahn eines Teilchens kann nicht vorhergesagt werden
+				\item Reynoldszahl größer als der kritische Wert \(Re_{krit}\)
+				\item in Rohr entsteht Verwirbelung durch den Geschwindigkeitsunterschied der Strömung in der Rohrmitte gegenüber der Strömung nahe der Wand des Rohrs
+			\end{itemize}
+			
+			Eine Strömung ist stationär, wenn sich sowohl die Strömungsgeschwindigkeit, als auch die Querschnittsfläche der Strömung nicht zeitlich ändern, also an jedem einzelnen Ort gilt:
+			\begin{align*}
+			\dot v=\dot A=0
+			\end{align*}
+			Allerdings können sich \(v\) und \(A\) zwischen verschiedenen Orten sehr wohl variieren, die Ableitung nach dem Ort muss also nicht zwingend 0 sein. In einer stationären Strömung entsprechen die Stromlinien auch den Bahnlinien und die Teilchen bewegen sich auf den zeitlich unveränderten Stromlinien.
+			
+		\subsection{Frage 3}
+			Eine wichtige Beschreibung strömender Fluide liefert die Bernoulli-Gleichung. Leiten Sie diese
+			für reibungsfreie, inkompressible Fluide anhand der Abbildung wk.2 aus dem Praktikumsskript her. Gehen Sie hierbei von der Energieerhaltung idealer, reibungsfreier Fluide aus.\\
+			\\
+			Die Arbeit ist gegeben durch Änderung der Energie, also hier:
+			\begin{align*}
+			W=\Delta E_{Druck}+\Delta E_{kin}
+			\end{align*}
+			\begin{align*}
+			W=F\Delta x + \Delta E_{kin}
+			\end{align*}
+			Mit der durch den Druck verübten Kraft \(F=pA\) ergibt sich
+			\begin{align*}
+			W=pA\Delta x=p\Delta V +\Delta E_{kin}
+			\end{align*}
+			wobei \(p\) den Druckunterschied zwischen den beiden beiden betrachteten Stellen bezeichnet. Damit erhält man
+			\begin{align*}
+			W=(p_{2}-p_{1})\Delta V +\Delta E_{kin}
+			\end{align*}
+			Die Änderung der kinetischen Energie ergibt sich wie folgt:
+			\begin{align*}
+			\Delta E_{kin}=\frac{1}{2}\Delta m(v_{2}^{2}-v_{1}^{2})
+			\end{align*}
+			mit \(\Delta m=\rho \Delta V\) folgt dann, wenn man auf beiden Seiten durch \(\Delta V\) dividiert und verwendet, dass die Gesamtenergie im System konstant bleiben muss:
+			\begin{align*}
+			(p_{2}-p_{1})+\frac{1}{2}\rho (v_{2}^{2}-v_{1}^{2})=const.
+			\end{align*}
+			\begin{align*}
+			p_{1}+\frac{1}{2}\rho v_{1}^{2}=p_{2}+\frac{1}{2}\rho v_{2}^{2}
+			\end{align*}
+			somit folgt
+			\begin{align*}
+			p+\frac{1}{2}\rho v^{2}=p_{0}=const.
+			\end{align*}
+			wobei \(p=p_{stat}\) und \(\frac{1}{2}\rho v^{2}\) den Staudruck bezeichnet.
+			
+		\subsection{Frage 4}
+			Berechnen sie den relativen Druckabfall strömender Luft (\(\rho=1,293\frac{kg}{m^{3}}\), \(p_{0}=1bar\)) bei
+			einer Strömungsgeschwindigkeit von 250 km/h.\\
+			\\
+			Ohne Rand ist der statische Druck der relative Druckabfall. mit den werten ergibt sich:
+			\begin{align*}
+			p_{0}-\frac{1}{2}\rho v^{2}=100000Pa-\frac{1}{2}\cdot 1,293\frac{kg}{m^{3}\cdot (\frac{250}{3,6}\frac{m}{s})}=9,7\cdot 10^{4}Pa
+			\end{align*}
+			
+		\subsection{Frage 5}
+			Welche Bedeutung hat der \(c_{w}\)-Wert in der Aerodynamik? Wie wird er im Versuch experimentell
+			bestimmt?\\
+			\\
+			Der \(c_{w}\)-Wert ist ein Maß für den Strömungswiderstand eines Körpers, der von einem Fluid umströmt wird. Er besitzt keine Dimension. Er wird auch als Strömungswiderstandskoeffizient bezeichnet. Seine Bedeutung für die Aerodynamik wird deutlich, wenn man sich anschaut, wie er definiert ist:
+			\begin{align*}
+			c_{w}=\frac{2F_{w}}{\rho v^{2}A}
+			\end{align*}
+			Wobei \(F_{w}\) die Widerstandskraft, \(A\) die betrachtete Fläche und der Rest die Staudichte bezeichnen. Man sieht also, dass der \(c_{w}\)-Wert dazu dient, die Kraft, welche durch eine Strömung, die auf eine Fläche trifft, ausgeübt wird, zu bestimmen. In der Aerodynamik versucht man daher z.B. beim Bau von Autos diese so zu designen, dass sie einen möglichst geringen \(c_{w}\)-Wert besitzen, um die Widerstandskraft klein zu halten, damit das Auto nicht zu stark gebremst wird.\\
+			Der \(c_{w}\)-Wert kann experimentell im Windkanal bestimmt werden, indem man denzu betrachtenden Körper auf Kraftsensoren platziert und die Widerstandskraft damit misst. Dann kann man mit den bekannten Dichte- und Geschwindigkeitswerten, sowie der Stirnfläche des Körpers, bzw. bei Flügeln der Flügelfläche (Auftriebsfläche) den jeweiligen \(c_{w}\)-Wert berechnen. Bei sehr komplexen Gegenstandsformen kann dies äußerst kompliziert werden, so dass man unter Umständen auf eine numerische Berechnung zurückgreift. Im heutigen Versuch handelt es sich bei den Kraftsensoren um eine Umlenkvorrichtung.
+			
+		\subsection{Frage 6}
+			Was ist der Magnuseffekt? Nennen Sie ein alltägliches Beispiel!\\
+			\\
+			Durch den Magnus-Effekt wird die Wirkung einer Querkraft beschrieben, die ein rotierender Körper in einer Strömung erfährt. Diese Querkraft wirkt senkrecht zur Anströmrichtung, sowie senkrecht zur Rotationsachse des rotierenden Körpers. Für die Erklärung dieses Effektes betrachten wir eine rechtsdrehende Kugel, welche sich in einer von links nach rechts verlaufenden Strömung befindet. Durch diese Drehbewegung werden die Teilchen, welche sich auf der oberen Seite der Kugel befinden, beschleunigt, wohingegen die auf der unteren Seite durch die Bewegung Verlangsamt werden. Somit ist die Geschwindigkeitsverteilung nicht mehr homogen. Damit folgt dann direkt aus der Bernouilli Gleichung, dass auch die Druckverteilung nicht mehr homogen sein kann. Die wirkende Querkraft ergibt sich dann durch die Beziehung:
+			\begin{align*}
+			F=\Delta p A
+			\end{align*}
+			wobei \(\Delta p\) den Druckunterschied zwischen der Ober- und Unterseite der rotierenden Kugel bezeichnet und \(A\) die Querschnittsfläche der Kugel. Im Alltag kann man den Magnuseffekt zum Beispiel im Sport betrachten. So wird er im Fußball genutzt, um dafür zu sorgen, dass der Ball in der Luft seine Richtung ändert, oder auch beim Tischtennis oder Tennis in ähnlicher weise (Topspin, SLice).
+			
+		\subsection{Frage 7}
+			In (Abb. wk.10 im Skript) ist ein Tragflächenprofil skizziert. Beschreiben Sie qualitativ die Entstehungsgrundlage
+			der Auftriebskraft \(F_{A}\).\\
+			\\
+			In der Zeichnung wird ein Laminares Profil dargestellt. Dies hat zur Folge, dass der Umschlagpunkt aufgrund der S-förmigen Unterseite sehr weit hinten liegt und daher auf der Unterseite weitestgehend eine laminare Strömung herrscht, die eng an der Profiloberfläche verläuft. Auf der Oberseite folgt die Strömung nicht solange der Profilfläche, weshalb auf der Oberseite ein Unterdruck entsteht, und auf der Unterseite ein Überdruck. Durch beides wird die Tragfläche nach oben gedrückt.
+		
+	\end{document}
