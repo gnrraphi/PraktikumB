@@ -8,11 +8,9 @@
 \usepackage{graphicx}
 \usepackage{esvect}
 
-
-
 \title{Praktikum B Vorbereitung zu Versuch "lb"}
 \author{Leon Machtl und Raphael Lehner}
-\date{05.02.2020}
+\date{06.02.2020}
 
 \begin{document}
 	\maketitle
@@ -20,76 +18,210 @@
 	\newpage
 	
 	\section{Einleitung zum Versuch}
-	Inhaltlich fertig - Bilder fehlen noch und paar Formartierungen, aber ich hab immerhin was gemacht.-------------
-	Die Beugung oder Diﬀraktion ist die Ablenkung von Wellen an einem Hindernis. Durch Beugung kann sich eine Welle in Raumbereiche ausbreiten, die auf geradem Weg durch das Hindernis versperrt wären. Jede Art von physikalischen Wellen kann Beugung zeigen. Besonders deutlich erkennbar ist sie bei Wasserwellen oder bei Schall. Bei Licht ist die Beugung ein Faktor, der das Auﬂösungsvermögen von Kamera-Objektiven und Teleskopen begrenzt. Manche technische Komponenten, wie Beugungsgitter, nutzen die Beugung gezielt aus. Zur Beugung kommt es durch Entstehung neuer Wellen entlang einer Wellenfront gemäß dem huygens-fresnelschen Prinzip. Es besagt, dass jeder Punkt einer Wellenfront als Ausgangspunkt einer neuen Welle, der so genannten Elementarwelle, betrachtet werden kann. Die neue Lage der Wellenfront ergibt sich durch Superposition sämtlicher Elementarwellen. Da die Elementarwelle eine Kugelform bzw. Kreisform hat,bildet sich auch eine rücklaufende Welle. Im Falle sehr enger Spalte bilden sich keine Wellenfronten mehr, da näherungsweise nur mehr eine einzige Elementarwelle den Spalt passieren kann. Hieraus ergeben sich eine Reihe von besonderen Eigenschaften, wie etwa das Entstehen von Interferrenzmustern. Für die folgenden Ausführungen wird i.d.R.von koheräntem und monochromatischen Licht ausgegangen, also von fester Phasenbeziehung und gleicher Wellenlänge aller beteiligten Photonen.
+	
+	Die Beugung, die auch als Diffraktion bezeichnet wird, ist die Ablenkung von Wellen an einem beliebigen Objekt. Ein Effekt der Beugung ist, dass sich die Lichtwelle auch in Schattenbereiche des Hindernisses ausbreiten kann, also in Bereiche, die eigentlich auf geradem Weg durch das Objekt verdeckt werden würden. Beugung betrifft jede Art physikalischer Wellen, bei Schall und Wasser ist sie jedoch besonders deutlich erkennbar. Betrachtet man Lichtwellen, stellt die Beugung einen Faktor dar, durch den das Auflösungsvermögen begrenzt wird (zum Beispiel in Teleskopen). Die Fresnelsche Zonenplatte und Begungsgitter sind Beispiele für eine gezielte Ausnutzung der Beugung. Die Entstehung der Beugung lässt sich mit Hilfe des Huygenschen Prinzips erklären, welches besagt, dass sich jeder Punkt einer Wellenfront als Ausgangspunkt einer Elementarwelle betrachten lässt und sich somit die weiteren Wellenfronten durch die Überlagerung dieser Elementarwellen ergeben. Die Elementarwellen beschreiben dabei einen Kreis. Betrachtet man einen unendlich dünnen Spalt, kann sich nur noch eine einzige Elementarwelle bilden, und somit entstehen keine Wellenfronten durch Superposition. Somit erhält man durch sehr kleine Spalte also Punktlichtquellen. Dadurch kommt es zu interessanten Phänomenen wie Interferenz- und Beugungsmustern. In den nachfolgenden Rechnungen wird monochromatisches und kohärentes Licht angenommen, um sie zu erleichtern.
+	
+	\subsection{Wichtige Formeln}
+		\subsection{Einfachspalt}
+			Lage der Minima: \(sin(\Phi_{k,min})=\frac{\lambda}{b}k\) \\
+			Lage der Maxima: \(sin(\Phi_{k,max})=\frac{\lambda}{b}(k+\frac{1}{2})\)\\
+			Hauptmaximum: \(\Phi_{0,max}=0\)\\
+			wobei \(k=1,2,3,...\) Beugungsordnung heißt.
+			
+		\subsection{Doppelspalt}
+			Lage der Minima II. Klasse: \(sin(\Psi_{m,min})=\frac{\lambda}{d}(m+\frac{1}{2})\)\\
+			Maxima II. Klasse: \(sin(\Psi_{m,max})=\frac{\lambda}{d}m\)\\
+			mit \(m=0,1,2,3,..\)
+			
+		\subsection{N-fach Spalt und Gitter}
+			Minima und Maxima I. und II. Klasse bleiben an den gleichen Stellen, die Extremstellen II. Klasse werden jedoch schmaler, dazwischen bilden sich \(N-2\) schwächere Nebenmaxima.\\
+			Intensität des gebeugten Lichtes: 
+			\begin{align*}
+			I(\Phi)=\frac{sin^{2}(\frac{\pi b}{\lambda}sin(\Phi))}{(\frac{\pi b}{\lambda}sin(\Phi))^{2}}\frac{sin^{2}(\frac{N\pi d}{\lambda}sin(\Phi))}{(sin(\frac{N\pi d}{\lambda}sin(\Phi)))^{2}}
+			\end{align*}
 		
-		\FloatBarrier
-			\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{./Bilder/lb01}
+		
 
-\end{figure}
-\FloatBarrier
+
 	\section{Fragen zur Vorbereitung}
 		\subsection{Frage 1}
-		Wie in Tabelle 1.1 aufgeführt ist die Lage der Extrema sowohl beim Einfach- als auch beim Doppelspalt abhängig von der Wellenlänge des durchfallenden Lichts. Die Wellenlänge ändert sich jedoch beim Übergang von einem Medium mit Brechungsindex n1 in eines mit Brechungsindex n2 nach: λ0 = λn1 n2 Vergleichen wir die Situation in Luft gegen die in Wasser, so gilt: nLuft < nWasser =⇒ Wellenlänge wird kürzer =⇒ die Extrema rücken näher zusammen.
-
+		Nehmen Sie an, die Beugung findet nicht in Luft (\(n\approx1\), sondern in Wasser statt (\(n>1\)). Wie
+		ändert sich das Beugungsbild?\\
+		\\
+		Wie in dem Abschnitt über wichtige Formeln aufgeführt, hängt die Lage der Extrema sowohl beim Einfach- als auch beim Doppelspalt von der Wellenlänge ab. Für die Wellenlänge in einem Medium \(n\) gilt: 
+		\begin{align*}
+		\lambda '= \frac{\lambda_{0}}{n}
+		\end{align*}
+		Somit gilt für die Luft ungefähr
+		\begin{align*}
+		\lambda = \lambda_{0}
+		\end{align*}
+		Im Wasser jedoch
+		\begin{align*}
+		\lambda '= \frac{\lambda_{0}}{n}
+		\end{align*}
+		mit \(n>1\), somit ist Wellenlänge im Wasser kleiner als in der Luft. Betrachtet man nun die Formeln aus dem Vorbereitungsteil im Kapitel Einfachspalt, so sieht man sofort, dass die Extrema zusammenrücken.
+		
 		\subsection{Frage 2}
-		DieÜberlagerungzweierEinzelspalt-Experimente ist qualitativ verschieden vom Ergebnis des Doppelspalt-Experiments. Im EinfachspaltExperiment treten keine Extrema II Klasse auf; das Bild des Doppelspalt-Experiments enthält dagegen solche Nebenextrema. Die Einhüllende des Doppelspalt-Bildes entspricht jedoch der Überlagerung zweier EinzelspaltBilder.
+		Es werde zuerst das Beugungsbild eines Doppelspalts fotografisch aufgenommen; auf einem
+		gleichartigen Film werden dann nacheinander die Beugungsfiguren beider Einzelspalte auf
+		demselben Film aufgenommen. Insgesamt werden beide Filme gleich lange belichtet. Vergleichen
+		Sie die Beugungsbilder miteinander. Erklären Sie Gleichheit oder Ungleichheit.\\
+		\\
+		Werden zwei Einzelspalte überlagert, so erhält man keine einfache Addition der Beugungsfiguren als Intensitätsverteilung, da durch die Interferenz des Lichts beider Spalte ein Interferenzmuster entsteht, welches hochfrequente Modulierungen mit Extrema II. Klasse aufweist, welche bei den Beugungsfiguren der einzelnen Spalte nicht auftauchen. Die Einhüllende des Doppelspalt Bildes jedoch entspricht der Überlagerung zweier Einzelspalt Bilder.
 
 Bilder ...
 		\subsection{Frage 3}
-		Werden beide Spalte des Doppelspaltexperiments von zwei eigenständigen Laserlichtquellen belichtet, so erhält das Experiment folgende Freiheitsgrade:
+		Nehmen Sie an, bei einem Doppelspalt werden die beiden Spalte jeweils von verschiedenen
+		Lasern beleuchtet. Wie würde sich das Beugungsbild gegenüber dem üblichen Experiment ändern?\\
+		\\
+		Es gibt zwei Faktoren, welche eine Änderung verursachen können. Zum Einen die Phasenbeziehung: Da sich die beiden näherungsweisen Punktquellen in keiner definierten Phasenbeziehung zueinander befinden, kann sich der Mittelpunkt des Interferenzmusters am Schirm gegenüber der optischen Aschse verschieben.\\
+		Der andere Faktor ist die Wellenlänge des Lichts der beiden Laser: Beistzen die beiden Laser die selbe Wellenlänge, so interferiert das Licht in gewohnter Weise, wie in den Formeln des oberen Abschnitts. Sind die beiden Wellenlängen voneinander verschieden, so ergibt sich eine Überlagerung zweier Einfachspaltbilder mit unterschiedlichem \(\lambda\).
 		
-		\FloatBarrier
-			\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{./Bilder/lb02}
-
-\end{figure}
-\FloatBarrier
 
 		\subsection{Frage 4}
-		Stammt das Licht, das auf den Doppelspalt fällt, aus einer einzigen Lichtquelle, die mittels eines Strahlteilers auf beide Spalte gelenkt wird, so ist die Wellenlänge des einfallenden Lichts an beiden Spalten dieselbe. Jedoch hat das Licht unterschiedliche Laufzeiten und wird bei der Reﬂexion Phasenverschoben. Wie schon in der vorigen Aufgabe ist das Ergebnis eine (nicht deﬁnierte) Verschiebung des Interferrenzbildes gegenüber der Systemachse.
+		Nehmen Sie an, ein Laserstrahl wird durch Spiegel aufgespalten und die beiden Strahlen beleuchten je einen Spalt. Besteht ein Unterschied zu dem vorher geschilderten Fall? Wenn ja,	erklären Sie, weshalb.\\
+		\\
+		Da das Licht aus der gleichen Lichtquelle stammt, ist die Wellenlänge beider Strahlen identisch. Die Phasen der beiden Strahlen werden jedoch durch die Reflexion und unterschiedliche Laufzeiten phasenverschoben, wodurch sich, wie in der Aufgabe zuvor eine Verschiebung des Interferenzmusters gegenüber der optischen Achse ergibt.
 
 		\subsection{Frage 5}
-		Quecksilberdampﬂampen emittieren (näherungsweise) ein Linienspektrum mit mehreren Peaks. Für jede der Anregungslinien entsteht ein eigenes Interferrenzmuster, die sich additiv überlagern. Aufgrund der menschlichen Wahrnehmung des Lichts (drei Arten farbempﬁndliche Sensorzellen) erscheint das Interferrenzmuster „regenbogenfarbig“.
-
+		Wie ändert sich das Beugungsbild eines Spalts, wenn dieser statt mit einem Laser mit Licht
+		einer Hg-Dampflampe beleuchtet wird?\\
+		\\
+		Quecksilberdampflampen weisen ein Linienspektrum auf, das Spektrum besitzt also mehrere scharfe Peaks. Für jeden dieser Peaks entsteht nun beim Doppelspalt je ein Interferenzmuster. Diese verschiedenen Interferenzmuster überlagern sich nun gemäß der Superposition zu einem einzelnen Muster, welches aufgrund der Beschaffenheit des menschlichen Auges regenbogenartig erscheint.
+		
 Bilder ...
 		\subsection{Frage 6}
-		Bei der Entstehung der Interferrenzmuster ist es von Bedeutung,obdasaufdenSpaltfallendeLichtalsParallelstrahleneinﬁel,oderobeinekomplexereBeziehung zwischen den Teilstrahlen bestand.
-Man spricht von Fraunhoferbeugung, wenn der Spalt so belichtet wird, dass parallele Strahlen einfallen. Dies wird z.B.in guter Näherung durch eine Punktlichtquelle im Fernfeld des Spalts erreicht. Bei der Fresnelbeugung dagegen stand die Punktlichtquelle im Nahfeld des Spalts. In diesem Fall ist der Winkel, den die Strahlen zur optischen Achse (Lichtquelle – Spalt) einschließen nicht vernachlässigbar.
+		Was unterscheidet Fraunhofer- und Fresnel-Beugung?\\
+		\\
+		\begin{itemize}
+			\item Fraunhoferbeugung
+			\begin{itemize}
+				\item Spalt durch parallele Lichtstrahlen beleuchtet
+				\item Näherungsweise im Fernfeld einer Punktlichtquelle der Fall
+				\item Bei Fraunhoferbeugung betrachtet man also das Fernfeld
+			\end{itemize}
+			\item Fresnelbeugung
+			\begin{itemize}
+				\item Lichtstrahlen fallen nicht parallel auf den Spalt
+				\item Winkel nicht vernachlässigbar
+				\item Die Fresnelbeugung betrachtet also das Nahfeld, also eine endliche Entfernung
+			\end{itemize}
+		\end{itemize}
 
 Bilder ...
 			
-							 			\subsection{Frage 7}
-Ein Lichtstrahl, der durch einen Spalt der Breite b tritt wird gedanklich in N einzelne Strahlen im Abstand q =b/N zueinandereingeteilt.Nachdemhuygensfresnelschen Prinzip entstehen hinter dem Spalt nicht nur geradlinige Strahlen, sondern auch Strahlen, die in jede Richtung ϕ von der geraden Linie abweichen. Wenn diese auf einen geraden Schirm im Abstand d treﬀen,sohabensiezueinandereinenAbstand∆x und einen Gangunterschied von ∆s bzw. eine Phasendiﬀerenz ∆ϕ. Es gilt:
+\subsection{Frage 7}
+Leiten Sie für den Einfachspalt die Formel \(I(\phi)=I_{0}sinc^{2}(\frac{\Theta}{2})\) mit \(\Theta = \frac{2\pi}{\lambda}bsin(\phi)\) und \(I_{0}=I(\phi=0)\) für die Intensitätsverteilung in Abhängigkeit vom Beugungswinkel \(\phi\) ab. Berechnen Sie das Intensitätsverhältnis \(I(\phi_{k,max})/I(\phi=0)\) für die erste (\(k=1\)) und zweite (\(k=2\)) Beugungsordnung.\\
+\\
+Unter der Annahme, dass die Spaltanordnung komplett zweidimensional ist, es also nur eine Breite, aber keine Höhe gibt, ergibt sich mit der Fraunhoferbeugung das Integral:
+\begin{align*}
+E(\beta)\propto\int_{-\infty}^{\infty}\Omega(x)exp(-ik\beta x)dx
+\end{align*} 
+mit der Wellenzahl \(k\), \(\beta =sin(\phi)\) und der Koordinate x und \(\Omega (x)=1\) falls \(-\frac{b}{2}\leq x \leq \frac{b}{2}\) und \(\Omega (x)=0\) sonst. Somit folgt
+\begin{align*}
+\int_{-\infty}^{\infty}\Omega(x)exp(-ik\beta x)dx=\int_{-\frac{b}{2}}^{\frac{b}{2}}exp(-ik\beta x)dx=\frac{1}{-ik\beta}[exp(-ik\beta\frac{b}{2})-exp(ik\beta\frac{b}{2})]
+\end{align*}
+\begin{align*}
+=\frac{2sin(k\beta \frac{b}{2})}{k\beta}=\frac{sin(k\beta\frac{b}{2})}{\frac{k\beta}{2}}
+\end{align*}
+Es gilt \(I\propto EE^{*}=|E|^{2}\), somit folgt aus der obigen Rechnung:
+\begin{align*}
+|E|^{2}\propto\frac{sin^{2}(k\beta\frac{b}{2})}{(\frac{k\beta}{2})^{2}}
+\end{align*}
+Für die Berechnung von \(I(\beta=0)\) nutzt man die Regel von l'Hopital:
 
-	\FloatBarrier
-			\begin{figure}[h]
-\centering
-\includegraphics[width=0.6\textwidth]{./Bilder/lb03}
+\begin{align*}
+I(\beta=0)=\lim\limits_{\beta \rightarrow 0}{\frac{sin^{2}(k\beta\frac{b}{2})}{(\frac{k\beta}{2})^{2}}}=\lim\limits_{\beta \rightarrow 0}{\frac{[cos^{2}(\frac{k\beta b}{2})-sin^{2}(\frac{k\beta b}{2})]k^{2}\frac{b^{2}}{4}}{\frac{k^{2}}{4}}=b^{2}}
+\end{align*}
+Somit folgt 
+\begin{align*}
+\frac{I(\beta)}{I_{0}}=\frac{sin^{2}(k\beta\frac{b}{2})}{(\frac{k\beta b}{2})^{2}}=sinc^{2}(k\beta \frac{b}{2})=sinc^{2}(\frac{2\pi}{\lambda}sin(\phi)\frac{b}{2})=sinc^{2}(\frac{\Theta}{2})
+\end{align*}
 
-\end{figure}
-\FloatBarrier
-Jeder Strahl ist gegen seinen Nachbarn um ∆ϕ verschoben. Insgesamt überlagern sich also N Wellen mit der Amplitude A, die jeweils um ∆ϕ gegeneinander phasenversetzt schwingen. Das gesamte ~ E-Feld in einem festen Punkt wird also beschrieben durch:
+Damit sieht man sofort: 
 
-\FloatBarrier
-			\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{./Bilder/lb04}
+\begin{align*}
+I(\beta)=I_{0}sinc^{2}(\frac{\Theta}{2})
+\end{align*}
 
-\end{figure}
-\FloatBarrier
+was zu zeigen war.
 
-		\subsection{Frage 8}
-		\FloatBarrier
-			\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{./Bilder/lb05}
+\begin{align*}
+sin(\Phi_{1,max})=\frac{\lambda}{b}(1+\frac{1}{2})=\frac{3\lambda}{2b}
+\end{align*}
+daraus folgt 
+\begin{align*}
+\Theta=3\pi
+\end{align*}
+also
+\begin{align*}
+\frac{I_{1,max}}{I_{0}}=sinc^{2}(\frac{3\pi}{2})=\frac{4}{9\pi^{2}}=0,045
+\end{align*}
+\begin{align*}
+sin(\Phi_{2,max})=\frac{\lambda}{b}(2+\frac{1}{2})=\frac{5\lambda}{2b}
+\end{align*}
+\begin{align*}
+\Theta=5\pi
+\end{align*}
+\begin{align*}
+\frac{I_{2,max}}{I_{0}}=\frac{4}{25\pi^{2}}=0,016
+\end{align*}
 
-\end{figure}
-\FloatBarrier
+\subsection{Frage 8}
+Verifizieren Sie für den Doppelspalt den Ausdruck\(I(\phi)=4I_{0}sinc^{2}(\frac{\Theta}{2})cos^{2}(\frac{\delta}{2})\) mit \(\Theta=\frac{2\pi}{\lambda}bsin(\phi)\) und \(\delta=\frac{2\pi}{\lambda}dsin(\phi)\) und \(I_{0}\) aus Aufgabe 7. Begründen Sie anschaulich das Auftreten des Faktors 4 und berechnen Sie die Intensität des
+ersten Nebenmaximums \(m=1\) relativ zum nullten in Abhängigkeit von Spaltbreite b und
+Spaltabstand d. Für welches Verhältnis d/b fällt das fünfte Nebenmaximum mit dem ersten
+Haupt-Minimum zusammen?\\
+\\
+Rechne wie in Aufgabe 7 mit \(\Omega_{DS}=\Omega_{1}(x)-\Omega_{2}(x)\) wobei \(\Omega_{1}=1\) für \(-\frac{d+b}{2}\leq x\leq \frac{d+b}{2}\) und ansonsten gleich 0 ist und \(\Omega_{2}=1\) für \(-\frac{d-b}{2}\leq x \leq \frac{d-b}{2}\) und sonst gleich 0. Damit erhält man mit der Fraunhofer-Beugungstheorie:
+\begin{align*}
+E(\beta)=\int_{-\infty}^{\infty}(\Omega_{1}(x)-\Omega_{2}(x))exp(-ik\beta x)dx=\int_{-\frac{d+b}{2}}^{\frac{d+b}{2}}exp(-ik\beta x)dx-\int_{-\frac{d-b}{2}}^{\frac{d-b}{2}}exp(-ik\beta x)dx
+\end{align*}
+Dies berechnet sich wie in der Aufgabe zuvor zu
+\begin{align*}
+\frac{2}{k\beta}[sin(k\beta\frac{d+b}{2})-sin(k\beta \frac{d-b}{2})]=2cos(k\beta \frac{d}{2})\frac{sin(k\beta\frac{b}{2})}{\frac{k\beta}{2}}
+\end{align*}
+Aus \(I\propto EE^{*}=|E|^{2}\) folgt dann wieder
+\begin{align*}
+I\propto 4cos^{2}(k\beta \frac{d}{2})\frac{sin^{2}(k\beta\frac{b}{2})}{(\frac{k\beta}{2})^{2}}
+\end{align*}
 
-		
-	\end{document}
+\(I_{0}=b^{2}\) nach Aufgabenstellung, somit erhält man
+
+\begin{align*}
+\frac{I_{DS}}{I_{0}}=4cos^{2}(k\beta \frac{d}{2})sinc^{2}(k\beta\frac{b}{2})
+\end{align*}
+Woraus sofort folgt
+\begin{align*}
+I_{DS}=4I_{0}cos^{2}(k\beta \frac{d}{2})sinc^{2}(k\beta\frac{b}{2})
+\end{align*}
+Dies ergibt mit \(k\), \(\beta\) wie oben das, was zu zeigen war.
+Nun berechne Intensität für \(m=1\):
+\begin{align*}
+sin(\Psi_{1,max})=\frac{\lambda}{d}
+\end{align*}
+damit ergibt sich
+\begin{align*}
+\Theta=\frac{2\pi b}{d}
+\end{align*}
+\begin{align*}
+\delta=2\pi
+\end{align*}
+Setzt man dies ein, erhält man die Intensität
+\begin{align*}
+\frac{I_{DS}}{I_{0}}=4sinc^{2}(\frac{\pi b}{d})
+\end{align*}
+Das erste Hauptminimum liegt bei 
+\begin{align*}
+sin(\Phi_{1,min})=\frac{\lambda}{b}
+\end{align*}
+das fünfte Nebenmaximum liegt bei
+\begin{align*}
+sin(\Psi_{5,max})=\frac{\lambda}{d}5
+\end{align*}
+fallen diese Zusammen, gilt somit:
+\begin{align*}
+\frac{d}{b}=5
+\end{align*}
+\end{document}
